@@ -79,11 +79,45 @@ In addition to a simple and intuitive user interface, there will also be a limit
 \end{itemize}
 
 \section{Planning}
-
 \subsection{Milestones}
+\subsubsection{User Interaction}
+	Users need to be able to easily read, comment, and make posts in real time. This is a challenge when there are fast updates and constant use. In addition to this, readers also need to be able to upvote and downvote posts, report posts, and save posts. Many of these features will need to be stored on a server, and most importantly, stored anonymously.
+Location
+	A user’s location will be general and only tied to their submitted posts and browsing. This data will only be stored when submitting a post.
+\subsubsection{Backend Development}
+	creating a strong and secure server will be challenging. Hosting a server will have more cons than pros, and renting a server may be safer for users. Getting the server setup will take a lot of time and effort to get it right. This means that a separate team will probably be assigned to 	develop this.
+Server-side Storage
+	Protecting user’s identity is very important. Things that are stored on a server like phone 	numbers and other identifiable information will be cached and stored on a local device. The 	only accounts that will exist are administrators (5 of us). These will be hashed and salted.
+Risks
+	Content such as posts and comments will be sent to the server. These will need to be checked for malicious code. This should happen quickly and reliably in order to have the user see the changes in a reasonable time. This will be tied to a unique user id, hidden on server side, in 	order to manage reports and bans.
+Client-side Storage
+	Users will have a cached version of the web-app, updating when refreshed or live feed. The app will have lightweight storage for the user.
+
 \subsection{Timeline}
+\subsubsection{HTML/CSS}
+	02/12/18- This should be enough time to develop a clean, fully functioning look to the app. It needs to be mobile friendly as well.
+\subsubsection{JAVASCRIPT}
+	02/19/18- Creating javascript is needed to make user interaction clean and send user data to the 	database. This should be secure and checked for vulnerabilities.
+\subsubsection{DATABASE}
+	03/01/18- The database should be set up and functioning in 1 month from now. This means that 	the app will be functioning and ready for testing.
+\subsubsection{MOBILE DEVELOPMENT}
+	03/01/2018- This should be developed to work alongside the database and serve an identical 	copy of the website for PC. Mobile will be the main focus of this app, so it is crucial that it 	works well and is secure.
+
 \subsection{Project Tracking}
+\subsubsection{GitHub}
+	We will be using GitHub to keep our code clean and organized. We have created a separate branch for these assignments and will be merging when complete. Github will allow us to store files neatly, and a seperate folder may be used for different teams.
+\subsubsection{Slack}
+	Slack has been very useful for many of us in the past. It allows us to communicate and stay on topic. We have everyone added and have been commenting and organizing meetings.
+\subsubsection{Drive}
+	A Google Drive folder has been created for our team. This allows us to manage files outside of github, such as photos, icons, useful links, notes, and written plans.
+
 \subsection{Risk Management}
+\subsubsection{Yik Yak}
+	This idea was done by a company that has shutdown. Yik Yak made serious changes to their app in their final years, including trying to make a transition to a social media website. They added usernames, forced users to be accountable. We need to stay away from making the same mistakes, and make sure our users are hidden, otherwise we will fail.
+\subsubsection{Storing User Data}
+	Storing user data is very important. Users need to be able to trust our security before they use it. The best way to make sure the data is safe is to not collect much at all. This means that users will have very little to lose if our lack of experience with data protection results in a breach.
+\subsubsection{Managing Content}
+	Learning how to manage all of the content needed to make the website functioning could be difficult. Many different parts written by different people will need to be combined and work together flawlessly. THis means that we will need to communicate well and make sure that we are all on the same page.
 
 
 \section{Meeting Report}
