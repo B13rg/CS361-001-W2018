@@ -1,5 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./} }
 
 
 \title{Talkatiel Software Requirements and Planning}
@@ -14,13 +16,15 @@
    \end{center}
 
 \section{Product Description}
-  When people move to a new area, it can be difficult to interact with new people.  People move away from their hometown and have an increased reliance on social networks such as facebook and twitter to feel connected to their friends and families at home.  This results in people not feeling part of their new communities.  The old communities have been left behind but people have trouble fully integrating into their new towns and neighborhoods.  College students are extremely susceptible to this feeling due to the fact that since 1986 the number of out-of-state freshmen has doubled\cite{strayer_2016}.
+  When people move to a new area, it can be difficult to interact with new people.  People move away from their hometown and have an increased reliance on social networks such as facebook and twitter to feel connected to their friends and families at home.  This results in people not feeling part of their new communities.  The old communities have been left behind but people have trouble fully integrating into their new towns and neighborhoods.  College students are extremely susceptible to this feeling due to the fact that since 1986 the number of out-of-state freshmen has doubled\cite{item2}.
 
-  Talkatiel provides a safe way to engage in a community without actually meeting anyone.  Users no longer need to fear going out to social events or community activities and dealing with terrifying or uncomfortable social situations.  This application allows people to integrate themselves into a community without great risk to themselves.  It can provide the deep seated need to be part of a community while also allowing people to be themselves without feel of social repercussion.
+  Talkatiel provides a safe way to engage in a community without actually meeting anyone.  Users no longer need to fear going out to social events or community activities and dealing with terrifying or uncomfortable social situations.  This application allows people to integrate themselves into a community without great risk to themselves.  It can provide the deep seated need to be part of a community while also allowing people to be themselves without feel of social repercussion.  Talkatiel solves an issue that other social networks have trouble solving.  Traditional social networks are great at one to one or one to many interations, but have trouble with many to many interactions.  Talktatiel allows many to many interactions that provide a sense of community and place for users.
+  
+  \includegraphics{similarServices}
 
 	Talkatiel will be a Portable Web App, or a PWA.  This allows it to behave as an app does while also being much more accessible and easier to use for our end users.  The web app itself will consist primarily of 3 elements:   the service worker, the app shell, and the backend database.  A service worker is a chunk of code that exists outside the website.  It stays on a users device and works to cache and manage data for the web app.  It will also allow us to send push notifications to the user.  The app shell is the skeleton behind the web app.  It is stored on the users device, allowing the web app to load quickly.  It manages the basic user interface which is then filled with content from the server.  The database will store all posts along with identification and metadata information.
 
-	Previously this idea has been attempted by Yik-Yak.  Originally released in 2013, Yik-Yak set out to solve many of the problems we are solving with Talkatiel.  One of the biggest issues that Yik-Yak encountered was bullying and harassment on the platform\cite{bramson_2014}.  The only moderation present in the app was an automod that deleted posts that had certain words.  This did not effectively deal with hurtful messages, only invited people to figure out better ways to circumvent the moderation.  To solve this, Talkatiel will use both word filtering and actual people to moderate.  As seen on sites like reddit, using trusted users to moderate other users can be a strong and effective tool.
+	Previously this idea has been attempted by Yik-Yak.  Originally released in 2013, Yik-Yak set out to solve many of the problems we are solving with Talkatiel.  One of the biggest issues that Yik-Yak encountered was bullying and harassment on the platform\cite{item1}.  The only moderation present in the app was an automod that deleted posts that had certain words.  This did not effectively deal with hurtful messages, only invited people to figure out better ways to circumvent the moderation.  To solve this, Talkatiel will use both word filtering and actual people to moderate.  As seen on sites like reddit, using trusted users to moderate other users can be a strong and effective tool.
 
 	To build Talkatiel we will use Polymer for the user facing side.  It has been proven to be a simple and fast portable web app tool that allows us to quickly move from the idea stage to the testing stages of features.  Polymer is built on a mix of HTML, javascript, Node.js (4.x) and Bower.  The database will run on the google service FireBase.  This allows us to easily store and distribute user posts and settings and integrates easily with Polymer.  In addition to simply delivering data, Firebase also has extensive analytic and monitoring tools, allowing us to see the health of Talkatiel at a glance.
 
@@ -94,7 +98,13 @@ In addition to a simple and intuitive user interface, there will also be a limit
 \subsection{Customer Meeting Status}
 
 \newpage
-\bibliography{TalktaTiel-SRP}
-\bibliographystyle{ieeetr}
+  \begin{thebibliography}{1}
+
+  \bibitem{item1} Lindsay Bramson {\em Yik Tak bullying leads district to ban app}  2014: KXAN.com. http://kxan.com/2014/09/29/yik-yak-bullying-leads-districts-to-ban-app/
+
+  \bibitem{item2}  Nick Strayer {\em The Great Out-Of-State Migration: Where Students Go} 2016:
+  New York Times. https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html
+
+  \end{thebibliography}
 
 \end{document}
