@@ -1,6 +1,5 @@
-all: 
-	pdflatex Assignment_1_Vision_Statement.tex
-	pdflatex Talkatiel-SRP.tex
+all:
+	pdflatex TalkaTiel-SRP.tex
 
 clean:
 	rm *.aux
