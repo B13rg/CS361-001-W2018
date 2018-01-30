@@ -23,26 +23,41 @@
 \contentsline {subsubsection}{\numberline {2.1.5}Flow of Events}{6}
 \contentsline {subsubsection}{\numberline {2.1.6}Quality Requirements}{7}
 \contentsline {subsubsection}{\numberline {2.1.7}Error Scenarios}{7}
-\contentsline {subsection}{\numberline {2.2}Use Case 2}{7}
-\contentsline {section}{\numberline {3}Planning}{7}
-\contentsline {subsection}{\numberline {3.1}Milestones}{7}
-\contentsline {subsubsection}{\numberline {3.1.1}User Interaction}{7}
-\contentsline {subsubsection}{\numberline {3.1.2}Backend Development}{7}
-\contentsline {subsection}{\numberline {3.2}Timeline}{8}
-\contentsline {subsubsection}{\numberline {3.2.1}HTML/CSS}{8}
-\contentsline {subsubsection}{\numberline {3.2.2}JAVASCRIPT}{8}
-\contentsline {subsubsection}{\numberline {3.2.3}DATABASE}{8}
-\contentsline {subsubsection}{\numberline {3.2.4}MOBILE DEVELOPMENT}{8}
-\contentsline {subsection}{\numberline {3.3}Project Tracking}{8}
-\contentsline {subsubsection}{\numberline {3.3.1}GitHub}{8}
-\contentsline {subsubsection}{\numberline {3.3.2}Slack}{8}
-\contentsline {subsubsection}{\numberline {3.3.3}Drive}{8}
-\contentsline {subsection}{\numberline {3.4}Risk Management}{8}
-\contentsline {subsubsection}{\numberline {3.4.1}Yik Yak}{8}
-\contentsline {subsubsection}{\numberline {3.4.2}Storing User Data}{9}
-\contentsline {subsubsection}{\numberline {3.4.3}Managing Content}{9}
-\contentsline {section}{\numberline {4}Meeting Report}{9}
-\contentsline {subsection}{\numberline {4.1}Progress Made This Week}{9}
-\contentsline {subsection}{\numberline {4.2}Plans for Next Week}{9}
-\contentsline {subsection}{\numberline {4.3}Team Member Contributions}{9}
-\contentsline {subsection}{\numberline {4.4}Customer Meeting Status}{9}
+\contentsline {subsection}{\numberline {2.2}Auditing the new post}{7}
+\contentsline {subsubsection}{\numberline {2.2.1}Goal}{7}
+\contentsline {subsubsection}{\numberline {2.2.2}Actors}{7}
+\contentsline {subsubsection}{\numberline {2.2.3}Preconditions}{7}
+\contentsline {subsubsection}{\numberline {2.2.4}Postconditions}{7}
+\contentsline {subsubsection}{\numberline {2.2.5}Flow of Events}{7}
+\contentsline {subsubsection}{\numberline {2.2.6}Quality Requirements}{8}
+\contentsline {subsubsection}{\numberline {2.2.7}Error Scenarios}{8}
+\contentsline {subsection}{\numberline {2.3}Viewing post page}{8}
+\contentsline {subsubsection}{\numberline {2.3.1}Goal}{8}
+\contentsline {subsubsection}{\numberline {2.3.2}Actors}{8}
+\contentsline {subsubsection}{\numberline {2.3.3}Preconditions}{8}
+\contentsline {subsubsection}{\numberline {2.3.4}Postconditions}{8}
+\contentsline {subsubsection}{\numberline {2.3.5}Flow of Events}{8}
+\contentsline {subsubsection}{\numberline {2.3.6}Quality Requirements}{8}
+\contentsline {subsubsection}{\numberline {2.3.7}Error Scenarios}{9}
+\contentsline {section}{\numberline {3}Planning}{9}
+\contentsline {subsection}{\numberline {3.1}Milestones}{9}
+\contentsline {subsubsection}{\numberline {3.1.1}User Interaction}{9}
+\contentsline {subsubsection}{\numberline {3.1.2}Backend Development}{9}
+\contentsline {subsection}{\numberline {3.2}Timeline}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}HTML/CSS}{9}
+\contentsline {subsubsection}{\numberline {3.2.2}Javascript}{9}
+\contentsline {subsubsection}{\numberline {3.2.3}Database}{10}
+\contentsline {subsubsection}{\numberline {3.2.4}Mobile Development}{10}
+\contentsline {subsection}{\numberline {3.3}Project Tracking}{10}
+\contentsline {subsubsection}{\numberline {3.3.1}GitHub}{10}
+\contentsline {subsubsection}{\numberline {3.3.2}Slack}{10}
+\contentsline {subsubsection}{\numberline {3.3.3}Drive}{10}
+\contentsline {subsection}{\numberline {3.4}Risk Management}{10}
+\contentsline {subsubsection}{\numberline {3.4.1}Yik Yak}{10}
+\contentsline {subsubsection}{\numberline {3.4.2}Storing User Data}{10}
+\contentsline {subsubsection}{\numberline {3.4.3}Managing Content}{11}
+\contentsline {section}{\numberline {4}Meeting Report}{11}
+\contentsline {subsection}{\numberline {4.1}Progress Made This Week}{11}
+\contentsline {subsection}{\numberline {4.2}Plans for Next Week}{11}
+\contentsline {subsection}{\numberline {4.3}Team Member Contributions}{11}
+\contentsline {subsection}{\numberline {4.4}Customer Meeting Status}{11}

@@ -76,6 +76,7 @@ In addition to a simple and intuitive user interface, there will also be a limit
       \item Keep track of the total votes a user has recieved
       \item Integrate ads into the platform
 \end{itemize}
+
 \section{Use Cases}
 
 \subsection{Creating a new post}
@@ -116,9 +117,83 @@ The update request created by the posting of a new post must be processed in les
 \textbf{Solution:}
   A page will load notifying the user that posting is temporarily down, and to try again in a few minutes
 
-\subsection{Use Case 2}
+\subsection{Auditing the new post}
+
+  \subsubsection{Goal}
+  Illegal posts won’t be able to post or they will be deleted later by administrators after receiving reports(break the anonymity rules: posts include personal phone number, email address ； contain illegal keywords: threatening or offensive language)
 
 
+  \subsubsection{Actors}
+  All users， administrator , word filter
+
+
+  \subsubsection{Preconditions}
+  Once users finish their posts and try to make a post, the word filter will be enabled. If the posts violate above rules, users will receive an alarm asks them to modify their post.
+
+
+  \subsubsection{Postconditions}
+   All posts will contain a report button in the bottom,  users are expected to maintain community stability by reporting illegal posts.
+
+
+  \subsubsection{Flow of Events}
+  \begin{itemize}
+    \item user clicks post
+    \item word filter is enabled and judge if the post legal
+    \item post legal, update to server / post illegal,  asks user to modify the post
+    \item  other user reviews the post
+    \item  other users like the post / report the post
+    \item administrator audits report post
+    \item administrator adds the report post into word filter.
+  \end{itemize}
+
+  \subsubsection{Quality Requirements}
+  All posts which get reported much be reviewed by administrator within 24 hr.
+  Word filter must be updated monthly.
+
+
+  \subsubsection{Error Scenarios}
+  \textbf{Problem:}
+  When illegal posts are prevented by word filter, but user doesn’t know what was wrong.
+  \textbf{Solution:}
+  highlight the illegal words.
+
+\subsection{Viewing post page}
+
+  \subsubsection{Goal}
+  Users should be able to view all posts in a specified range ranked by a variety of chosen factors, (time posted, number of upvotes in different time range)
+  \subsubsection{Actors}
+  College student users
+
+  \subsubsection{Preconditions}
+  The web app must first be loaded and the user must be on the posts page. The user must be connected to the internet to load content.
+
+  \subsubsection{Postconditions}
+  The app must be able to connect to the posts database.
+
+  \subsubsection{Flow of Events}
+  \begin{itemize}
+    \item User opens post page
+    \item post page cached DOM framework loads
+    \item web app queries server for posts with specific tags (time posted in range, topic)
+    \item web app sorts posts by number of upvotes
+    \item web app displays posts in DOM.
+
+  \end{itemize}
+
+  \subsubsection{Quality Requirements}
+  Post page must load in less than 3 seconds
+  Individual posts must load in less than 2 seconds
+
+
+  \subsubsection{Error Scenarios}
+  \textbf{Problem:}
+  The user is not connected to the internet, post fails to publish
+  \textbf{Solution:}
+    A page will load notifying the user that they have no connection to the internet
+  \textbf{Problem:}
+  The database is down for maintenance / DDOS, user unable to view posts
+  \textbf{Solution:}
+    A page will load notifying the user that posting is temporarily down, and to try again in a few minutes
 
 \section{Planning}
 \subsection{Milestones}
@@ -176,7 +251,7 @@ Client-side Storage
 
 \subsection{Customer Meeting Status}
 	We met with the customer and worked on getting general requirements set.  We talked about what the end goal should look like, along with optional goals that we may want to work on if we have time at the end.  The customer is very happy with how things are coming along.
-	
+
 \newpage
   \begin{thebibliography}{1}
 
