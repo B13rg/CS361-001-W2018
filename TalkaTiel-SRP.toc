@@ -1,4 +1,39 @@
-\contentsline {section}{\numberline {1}Product Description}{1}
-\contentsline {section}{\numberline {2}Use Cases}{1}
-\contentsline {section}{\numberline {3}Planning}{1}
-\contentsline {section}{\numberline {4}Meeting Report}{1}
+\contentsline {section}{\numberline {1}Product Description}{2}
+\contentsline {subsection}{\numberline {1.1}Functional Requirements}{3}
+\contentsline {subsubsection}{\numberline {1.1.1}Posting}{3}
+\contentsline {subsubsection}{\numberline {1.1.2}Moderation}{3}
+\contentsline {subsubsection}{\numberline {1.1.3}Geolocation}{4}
+\contentsline {subsubsection}{\numberline {1.1.4}Viewing Posts}{4}
+\contentsline {subsubsection}{\numberline {1.1.5}Reporting}{4}
+\contentsline {subsection}{\numberline {1.2}Non-Functional Requirements}{4}
+\contentsline {subsubsection}{\numberline {1.2.1}Secure}{4}
+\contentsline {subsubsection}{\numberline {1.2.2}Network Independent}{4}
+\contentsline {subsubsection}{\numberline {1.2.3}Responsive}{4}
+\contentsline {subsubsection}{\numberline {1.2.4}Deep Linking}{4}
+\contentsline {subsubsection}{\numberline {1.2.5}Standard App Manifest}{5}
+\contentsline {subsection}{\numberline {1.3}Documentations}{5}
+\contentsline {subsection}{\numberline {1.4}Major Features}{5}
+\contentsline {subsection}{\numberline {1.5}Minor Feature / Strech Goals}{5}
+\contentsline {section}{\numberline {2}Use Cases}{5}
+\contentsline {section}{\numberline {3}Planning}{6}
+\contentsline {subsection}{\numberline {3.1}Milestones}{6}
+\contentsline {subsubsection}{\numberline {3.1.1}User Interaction}{6}
+\contentsline {subsubsection}{\numberline {3.1.2}Backend Development}{6}
+\contentsline {subsection}{\numberline {3.2}Timeline}{6}
+\contentsline {subsubsection}{\numberline {3.2.1}HTML/CSS}{6}
+\contentsline {subsubsection}{\numberline {3.2.2}JAVASCRIPT}{6}
+\contentsline {subsubsection}{\numberline {3.2.3}DATABASE}{6}
+\contentsline {subsubsection}{\numberline {3.2.4}MOBILE DEVELOPMENT}{7}
+\contentsline {subsection}{\numberline {3.3}Project Tracking}{7}
+\contentsline {subsubsection}{\numberline {3.3.1}GitHub}{7}
+\contentsline {subsubsection}{\numberline {3.3.2}Slack}{7}
+\contentsline {subsubsection}{\numberline {3.3.3}Drive}{7}
+\contentsline {subsection}{\numberline {3.4}Risk Management}{7}
+\contentsline {subsubsection}{\numberline {3.4.1}Yik Yak}{7}
+\contentsline {subsubsection}{\numberline {3.4.2}Storing User Data}{7}
+\contentsline {subsubsection}{\numberline {3.4.3}Managing Content}{7}
+\contentsline {section}{\numberline {4}Meeting Report}{8}
+\contentsline {subsection}{\numberline {4.1}Progress Made This Week}{8}
+\contentsline {subsection}{\numberline {4.2}Plans for Next Week}{8}
+\contentsline {subsection}{\numberline {4.3}Team Member Contributions}{8}
+\contentsline {subsection}{\numberline {4.4}Customer Meeting Status}{8}
