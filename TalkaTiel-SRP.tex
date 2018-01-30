@@ -78,11 +78,47 @@ In addition to a simple and intuitive user interface, there will also be a limit
 \end{itemize}
 \section{Use Cases}
 
+\subsection{Creating a new post}
+
+\subsubsection{Goal}
+User wants to create a new text or image post and publish it to the web app for others to see
+
+\subsubsection{Actors}
+College student users
+
+\subsubsection{Preconditions}
+The web app must first be loaded and the user must be on the create a new post page. The user must have GPS coordinates that are within the campus area
+
+\subsubsection{Postconditions}
+The web app will send the information to a firebase database of posts, which will update, displaying the new content on other users device
+
+\subsubsection{Flow of Events}
 \begin{itemize}
-  \item Use Case 1
-  \item Use Case 2
-  \item Use Case 3
+  \item user clicks create new post create post page is loaded from server
+  \item user writes post and submits
+  \item post text and title is pushed to posts table
+  \item firebase post table is updated
+  \item other users see updated post table when they load the posts page
 \end{itemize}
+
+\subsubsection{Quality Requirements}
+The app content framework must load in less than a second, maximizing local caching to minimize external CDN requests.
+The update request created by the posting of a new post must be processed in less than 5 seconds, and other users must be able to see the new post in less than 10 seconds
+
+
+\subsubsection{Error Scenarios}
+\textbf{Problem:}
+ The user is not connected to the internet, post fails to publish
+\textbf{Solution:}
+  A page will load notifying the user that they have no connection to the internet
+\textbf{Problem:}
+  The database is down for maintenance or DDOS, user unable to post
+\textbf{Solution:}
+  A page will load notifying the user that posting is temporarily down, and to try again in a few minutes
+
+\subsection{Use Case 2}
+
+
 
 \section{Planning}
 \subsection{Milestones}
