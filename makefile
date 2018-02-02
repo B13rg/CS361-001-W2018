@@ -1,5 +1,5 @@
 all:
-	pdflatex TalkaTiel-SRP.tex
+	pdflatex TalkaTiel-SDSUI.tex
 clean:
 	rm *.aux
 	rm *.log
