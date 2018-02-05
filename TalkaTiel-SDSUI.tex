@@ -29,7 +29,26 @@ Users view posts on the post viewing page of the app, which is the one that will
 
 
 \section{Class Diagram}
+
 \section{Sequence Diagram}
+\subsection{Creating a New Post}
+This is the UML for creating a post. It is designed to be quick and simple with minimal computation.
+
+\includegraphics[scale=0.85]{img/createPost}
+
+The user will initiate the new post and be taken to a new post page. They will fill in the requirements. They will hit submit, and their information will be checked to post. If they can post, their submission will be broken from the loop and sent to the database. The information will be updated, the user will be notified, and the page will refresh.
+\subsection{Auditing the New Post}
+This is the UML for auditing posts. It is made for users to delete their own posts and admins to delete any posts.
+
+\includegraphics{img/audit}
+
+The user will click on a post they want to delete. This will then get checked to see if they are an admin, or if they are the original author. If either condition is met, the post will be deleted from the database. If they fail the if statement, then we know they are a regular user trying to delete someone else’s post. 
+\subsection{Viewing Post Page}
+This its the UML for viewing an entire post. This means that the comments need to be shown. They cannot be upvoted, so the only option a user has is to create a comment.
+
+\includegraphics[scale=0.85]{img/createComment}
+
+The user can initiate the comment start, which is taken to the comment page. They will provide the information, and the loop will break once they have met all the conditions. The comment will then be sent to the database, the user will receive a notification, and the page will be refreshed.
 
 \section{Meeting Report}
 
