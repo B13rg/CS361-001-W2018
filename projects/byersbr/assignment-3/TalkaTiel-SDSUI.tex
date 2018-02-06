@@ -28,11 +28,21 @@ We have created three user interface prototypes to showcase the key user interac
 
 \subsection{Creating a New Post}
 Users create a new post with a title and text content. When they press the submit button, a new post element is added to the database, with the attributes of title, text content, submission time, upvote/downvote count, and author as specified by the post class diagram.
+
+\subsubsection{Post Creation Steps}
+\begin{enumerate}
+  \item User clicks post button at the bottom of main user interface.
+  \item Posting page will show after clicking.
+  \item User is able to cancel post by clicking cancel option on the top left corner.
+  \item User clicks post option, post submits. The new post will show on main user interface immediately.
+  \item User clicks cancel option and goes back to main user interface.
+\end{enumerate}
+
 \begin{center}
 \includegraphics[scale=0.30]{img/ui/post}
 \includegraphics[scale=0.30]{img/ui/post-review}\linebreak
 \textbf{Creating a New Post UI}\linebreak
-post submission page and viewing updated posts page
+post submission page and viewing updated main page
   \end{center}
 
 \subsection{Auditing New Post}
@@ -43,11 +53,27 @@ Post filtering software highlights text that needs to be removed before posting 
 
   \end{center}
 
-\subsection{Viewing Page}
+\subsection{Viewing Main Page}
 Users view posts on the post viewing page of the app, which is the one that will be loaded when the app starts. Users will view posts sorted by the post sorting function, from which users can select a time range to view posts from, top posts from last 24 hours, week, month, year, or ever. Users will update the posts by pulling down on the top of the app, which will send a request to the server for the updated posts table, which will then be filtered by the post sorting function and displayed to the user in order of time.
 \begin{center}
 \includegraphics[scale=0.30]{img/ui/view}\linebreak
-\textbf{Main Post Page UI}
+\textbf{Main Page UI}
+  \end{center}
+
+\subsection{Viewing Post Page and Commenting}
+The user is able to click comment button in the bottom right corner of each post to publish his opinion or review comment.
+\begin{center}
+\includegraphics[scale=0.30]{img/ui/commentCreate}
+\includegraphics[scale=0.228]{img/ui/commentUpdate}\linebreak
+\textbf{Commenting UI}\linebreak
+comment submission page and viewing updated main page
+  \end{center}
+
+\subsection{Sorting Posts}
+When user clicks sorting button, the sorting function in the view object sorts the posts. All posts can be sorted by time, most upvotes, and most downvotes.
+\begin{center}
+\includegraphics[scale=0.30]{img/ui/sorting}\linebreak
+\textbf{Sorting Posts UI}
   \end{center}
 
 \section{Class Diagram}
@@ -56,9 +82,11 @@ Users view posts on the post viewing page of the app, which is the one that will
 \textbf{Class Diagram}
   \end{center}
 
-The class diagram consists of four primary classes.  There is the user, view, post and favorites.  The user class is abstract, so a user can either be a regular user or an admin user.  Both types will have location, id and points properties that are tied directly to that user.  The admin has an extra set of functions that allow them to delete a post and ban a user.  Regular users won’t have access to these functions.  The user object will have a single favorites and a single post object tied to it.
+The class diagram consists of four primary classes.  There is the user, view, post and favorites.  The user class is abstract, so a user can either be a regular user or an admin user.  Both types will have location, id and points properties that are tied directly to that user.  The admin has an extra set of functions that allow them to delete a post and ban a user.  Regular users won’t have access to these functions.  The user object will have a single favorites and a single post object tied to it.\newline
+
 The favorites object will store a users favorite posts.  It will hold a list of posts that the users saves in their “favorites” list.  This provides a way for users to view old posts that may be hard to find, allowing them to quickly find them later.  The favorites object will have a list of posts, along with two methods to add and delete posts from the favorites list.  The favorites list will contain 0 or many posts, and the user on the device will only have 1 favorites object.
-The post object is the meat of the web app.  Each post object will contain all the information about the post, including post id, title, content, DateTime posted, number of votes, and the id of its parent post.  Along with these parameters it will have a few methods that allow the user to control their posts.  Those methods will allow a user to vote on a post, create a post, audit and verify a post, flag a post for admins, and add the post to a users favorites.  There will be one post object for the user, which they will use to create and favorite posts.  There will be a seperate post object for each post in a users feed.
+The post object is the meat of the web app.  Each post object will contain all the information about the post, including post id, title, content, DateTime posted, number of votes, and the id of its parent post.  Along with these parameters it will have a few methods that allow the user to control their posts.  Those methods will allow a user to vote on a post, create a post, audit and verify a post, flag a post for admins, and add the post to a users favorites.  There will be one post object for the user, which they will use to create and favorite posts.  There will be a seperate post object for each post in a users feed.\newline
+
 The post objects in the user feed will be managed by the view object.  This object will manage painting the screen and fetching posts from the server.  It will have a sortType attribute that defines how posts will be shown.  The view object will be able to refresh and sort posts.  There will only be one view object, along with multiple post objects for each post in the feed.
 The symbols used in the image above are different than in the lecture notes.  This is because of the software used to create the diagram.  These symbols match those used in database schema and entity-relationship designs.  The double lines mean one and only one.  The circle with the three branching lines means 0 or many, exactly like the 0..* quantifier.
 
@@ -75,8 +103,8 @@ This is the UML for auditing posts. It is made for users to delete their own pos
 \includegraphics[scale=0.50]{img/uml/audit}
 
 The user will click on a post they want to delete. This will then get checked to see if they are an admin, or if they are the original author. If either condition is met, the post will be deleted from the database. If they fail the if statement, then we know they are a regular user trying to delete someone else’s post.
-\subsection{Viewing Post Page}
-This its the UML for viewing an entire post. This means that the comments need to be shown. They cannot be upvoted, so the only option a user has is to create a comment.
+\subsection{Viewing Post Page and Commenting}
+This is the UML for viewing an entire post. This means that the comments need to be shown. They cannot be upvoted, so the only option a user has is to create a comment.
 
 \includegraphics[scale=0.50]{img/uml/createComment}
 
