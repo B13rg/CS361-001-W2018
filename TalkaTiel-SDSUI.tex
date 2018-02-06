@@ -23,19 +23,23 @@ We have created three user interface prototypes to showcase the key user interac
 \subsection{Creating a New Post}
 Users create a new post with a title and text content. When they press the submit button, a new post element is added to the database, with the attributes of title, text content, submission time, upvote/downvote count, and author as specified by the post class diagram.
 \begin{center}
-\includegraphics[scale=0.30]{img/ui/post}
+\includegraphics[scale=0.30]{img/ui/post}\linebreak
+\textbf{Creating a New Post UI}
   \end{center}
 
 \subsection{Auditing New Post}
 Post filtering software highlights text that needs to be removed before posting is successful, and prohibits the user from posting until such a condition is met. Examples of prohibited strings include doxxing related strings (phone numbers, addresses), and threat related strings (bomb, kill).
 \begin{center}
-\includegraphics[scale=0.30]{img/ui/bad-post}
+\includegraphics[scale=0.30]{img/ui/bad-post}\linebreak
+\textbf{Auditing Result UI}
+
   \end{center}
 
 \subsection{Viewing Page}
 Users view posts on the post viewing page of the app, which is the one that will be loaded when the app starts. Users will view posts sorted by the post sorting function, from which users can select a time range to view posts from, top posts from last 24 hours, week, month, year, or ever. Users will update the posts by pulling down on the top of the app, which will send a request to the server for the updated posts table, which will then be filtered by the post sorting function and displayed to the user in order of time.
 \begin{center}
-\includegraphics[scale=0.30]{img/ui/view}
+\includegraphics[scale=0.30]{img/ui/view}\linebreak
+\textbf{Main Post Page UI}
   \end{center}
 
 \section{Class Diagram}
@@ -63,6 +67,7 @@ The user can initiate the comment start, which is taken to the comment page. The
 \section{Meeting Report}
 
 \subsection{Progress Made This Week}
+
 \subsection{Plans for Next Week}
 \subsection{Team Member Contributions}
 
