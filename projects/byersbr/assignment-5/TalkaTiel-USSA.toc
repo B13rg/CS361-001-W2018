@@ -32,23 +32,23 @@
 \contentsline {subsection}{\numberline {1.11}Browser Compatibility}{12}
 \contentsline {subsubsection}{\numberline {1.11.1}Corresponding Tasks}{12}
 \contentsline {subsubsection}{\numberline {1.11.2}UML Sequence Diagram/Spike}{12}
-\contentsline {subsection}{\numberline {1.12}View newly created Post}{12}
+\contentsline {subsection}{\numberline {1.12}View newly created Post}{13}
 \contentsline {subsubsection}{\numberline {1.12.1}Corresponding Tasks}{13}
-\contentsline {subsubsection}{\numberline {1.12.2}UML Sequence Diagram/Spike}{13}
-\contentsline {subsection}{\numberline {1.13}Collapse Post Responses}{13}
-\contentsline {subsubsection}{\numberline {1.13.1}Corresponding Tasks}{13}
-\contentsline {subsubsection}{\numberline {1.13.2}UML Sequence Diagram/Spike}{14}
-\contentsline {subsection}{\numberline {1.14}Secure HTTPS}{14}
-\contentsline {subsubsection}{\numberline {1.14.1}Corresponding Tasks}{14}
-\contentsline {subsubsection}{\numberline {1.14.2}UML Sequence Diagram/Spike}{15}
-\contentsline {subsection}{\numberline {1.15}Save Website as App on Phone}{15}
-\contentsline {subsubsection}{\numberline {1.15.1}Corresponding Tasks}{15}
-\contentsline {subsubsection}{\numberline {1.15.2}UML Sequence Diagram/Spike}{16}
-\contentsline {subsection}{\numberline {1.16}Responsive Web Page}{16}
-\contentsline {subsubsection}{\numberline {1.16.1}Corresponding Tasks}{16}
-\contentsline {subsubsection}{\numberline {1.16.2}UML Sequence Diagram/Spike}{17}
-\contentsline {section}{\numberline {2}The Stories due Next Week}{17}
-\contentsline {section}{\numberline {3}Meeting Report}{18}
-\contentsline {subsection}{\numberline {3.1}Progress Made this Week}{18}
-\contentsline {subsection}{\numberline {3.2}Plans for Next Week}{18}
-\contentsline {subsection}{\numberline {3.3}Team Member Contributions}{18}
+\contentsline {subsubsection}{\numberline {1.12.2}UML Sequence Diagram/Spike}{14}
+\contentsline {subsection}{\numberline {1.13}Collapse Post Responses}{14}
+\contentsline {subsubsection}{\numberline {1.13.1}Corresponding Tasks}{14}
+\contentsline {subsubsection}{\numberline {1.13.2}UML Sequence Diagram/Spike}{15}
+\contentsline {subsection}{\numberline {1.14}Secure HTTPS}{15}
+\contentsline {subsubsection}{\numberline {1.14.1}Corresponding Tasks}{15}
+\contentsline {subsubsection}{\numberline {1.14.2}UML Sequence Diagram/Spike}{16}
+\contentsline {subsection}{\numberline {1.15}Save Website as App on Phone}{17}
+\contentsline {subsubsection}{\numberline {1.15.1}Corresponding Tasks}{17}
+\contentsline {subsubsection}{\numberline {1.15.2}UML Sequence Diagram/Spike}{17}
+\contentsline {subsection}{\numberline {1.16}Responsive Web Page}{17}
+\contentsline {subsubsection}{\numberline {1.16.1}Corresponding Tasks}{18}
+\contentsline {subsubsection}{\numberline {1.16.2}UML Sequence Diagram/Spike}{18}
+\contentsline {section}{\numberline {2}The Stories due Next Week}{18}
+\contentsline {section}{\numberline {3}Meeting Report}{19}
+\contentsline {subsection}{\numberline {3.1}Progress Made this Week}{19}
+\contentsline {subsection}{\numberline {3.2}Plans for Next Week}{19}
+\contentsline {subsection}{\numberline {3.3}Team Member Contributions}{19}

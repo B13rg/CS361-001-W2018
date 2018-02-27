@@ -137,6 +137,20 @@ Web app should work in both chrome and safari.
 \subsubsection{Corresponding Tasks}
 	The PWA will work across different web browsers.  Our primary targets are safari on iOS and chrome on android.  Because this depends on the entire app, it will be due late in the development process once nearly everything is implemented.  This allows us to make things compatible all at once instead of continually needing to update things.  Paired Programming time: 4 hours.
 \subsubsection{UML Sequence Diagram/Spike}
+Talktatiel should be designed to be compatible with modern browsers, meaning that it will display and behave the same on targeted browsers.  Talkatiel is meant to be a PWA, so we don’t need to worry about traditional desktop browsers.  We are dealing with mobile devices, so we want to make our PWA work on mobile browsers.  The primary browsers on the mobile market are Chrome, Safari and Firefox.  In order to properly implement compatibility, we must focus on two things: programming patterns and testing.  We must establish a set of programming practices that lend themselves to writing compatible code.  Two things that will help with this are doctyping and conditional comments.  Doctyping signals to the browser what sort of document it is dealing with.  Different documents have different ways of displaying, so making it clear that the PWA is a .aspx and not .asp will result in browsers correctly handling our site.  Conditional comments are sections of code that are conditionally commented.  For example, say we have this section of code:
+
+<link type="text/css" href="style.css" />
+<!--[If IE]>
+<link type="text/css" href="IEHacks.css" />
+<![endif]-->
+<!--[if !IE]>
+<link type="text/css" href="NonIEHacks.css" />
+<![endif]-->
+
+sections This section changes the style sheet link depending on if the browser is internet explorer or not.  If it is internet explorer, is loads a CSS file that has hacks that make internet explorer work.  If the browser is not internet explorer, it uses a cross-browser CSS file that behaves better.  We will not have as much of an issue with compatibility because we do not need to cater to Internet Explorer or Edge.
+
+Also, we need to place an emphasis on testing.  We need to go beyond just running it and seeing what happens.  We will need to test on a variety of devices and browsers, along with testing tools such as Lighthouse.  We will use tools online where you provide a URL and it tests the site on selected devices and browsers.  This will help us make sure that the user experience of our PWA is the same across the board.  Tools like Lighthouse will test the PWA and make sure that the website behaves as a website should and follows the website best practices set out by W3.
+
 
 \subsection{View newly created Post}
 When a post is created by a user, when they go back to the feed they should see
@@ -166,6 +180,8 @@ All communication should be through an ssl connection.
 	This consists of setting up the server that delivers content with a security certificate.  The certificate can be gotten from https://letsencrypt.org .  It will enable our server to deliver all content over https, improving security and following the guidelines of a PWA.  This will depend on the server side of things being implemented, which depends on the “Refresh” user story.  Paired Programming time: 4 hours.
 \subsubsection{UML Sequence Diagram/Spike}
 \includegraphics[scale=0.5]{img/14.png}\linebreak
+This is the spike description for the implementation of secure HTTPS communication of Talkatiel.  In order to communicate to users over an SSL connection, we must obtain a CA certificate for the application.  In order to get this we will user the free service Lets Encrypt.  They provide free SSL certificates and signing for websites.  To get a certificate, first we must modify the server and application to utilize HTTPS traffic.  Next we must generate public and private PGP keys for the server itself.  Then we generate a signing request certificate and send it to LetEncrypt.  They will validate and sign it before returning it to us.  Then we link the application to the certificate and restart the application.  Here we test the HTTPS connection to make sure it was implemented correctly.  Finally, we save the certificate information and setup a redirect to redirect traffic on ports 80 and 8080 to 443.  This will restrict our server to HTTPS traffic only, which is preferred and more secure for our users.
+
 
 \subsection{Save Website as App on Phone}
 Website should behave like a pwa and be able to be saved to a phones home screen.
