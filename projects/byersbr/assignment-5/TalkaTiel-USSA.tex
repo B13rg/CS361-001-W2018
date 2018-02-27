@@ -24,7 +24,7 @@ As the user adds a post, his post body is checked for any illegal characters or
 length, where it is then sent to the server and published.
 \subsubsection{Corresponding Tasks}
 \subsubsection{UML Sequence Diagram/Spike}
-\includegraphics[scale=1,bb=0 0 30 30]{img/story_1.png}\linebreak
+\includegraphics[scale=0.5]{img/story_1.png}\linebreak
 
 
 \subsection{Add a comment}
@@ -37,6 +37,8 @@ published.
   \item Response can be voted on/shared/favorited
 \end{itemize}
 \subsubsection{Corresponding Tasks}
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/story_2.png}\linebreak
 
 \subsection{Like/Dislike}
 When a user votes, their “+1” or “-1” is sent to the server, as long as they
@@ -50,6 +52,8 @@ have not voted on that post already, then the server is updated.
     \item If downvote is clicked the vote becomes a downvote
   \end{itemize}
 \end{itemize}
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/3.png}\linebreak
 
 \subsection{Report}
 When a user clicks the report post button, the post is flagged for review. After
@@ -57,20 +61,28 @@ X amount of reports, the post is automatically taken down while waiting review.
 \begin{itemize}
   \item When a user reports a post, the post won’t appear on the feed for that user
 \end{itemize}
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/4.png}\linebreak
 
 \subsection{Delete}
 When a user wants to delete a post, it is checked if it is their own post, if it
 is, it is deleted. If it is not, it is checked if they are an admin, if they
 are, it is deleted. The server will then update based on the above.
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/5.png}\linebreak
 
 \subsection{Refresh}
 If the user swipes down on the screen, the page reacts with an animation and
 then refreshes the page.
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/6.png}\linebreak
 
 \subsection{Sort}
 when clicked, the page alerts the user of the sorting type and then changes the
 sorting on the next click. They will be able to cycle through all of the
 different types.
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/7.png}\linebreak
 
 \subsection{Add to Favorites}
 All favorite posts are shown to the user by date added only.
@@ -78,6 +90,8 @@ All favorite posts are shown to the user by date added only.
   \item After a post is added to favorited, the post on the main feed should show that
 it is currently in the user’s favorites list
 \end{itemize}
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/8.png}\linebreak
 
 \subsection{Offline Favorites}
 When a user doesn’t have an internet connection, they should still be able to
@@ -86,6 +100,8 @@ see posts that they have favorited.
   \item Store them in memory
   \item Posts will show instead of the “no internet” page
 \end{itemize}
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/9.png}\linebreak
 
 \subsection{Offline Capability}
 When a user is offline, they should be served a page telling them they have no
@@ -94,13 +110,18 @@ internet. All urls should load.
   \item Use a service worker to monitor connections and requests
   \item If there’s no connection show a catch all page (exception is favorites page)
 \end{itemize}
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/10.png}\linebreak
 
 \subsection{Browser Compatibility}
 Web app should work in both chrome and safari.
+\subsubsection{UML Sequence Diagram/Spike}
 
 \subsection{View newly created Post}
 When a post is created by a user, when they go back to the feed they should see
 it immediately if sorted by new.
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/view_newly_created_post.png}\linebreak
 
 \subsection{Collapse Post Responses}
 When viewing responses to a post, user should be able to collapse a response,
@@ -108,6 +129,8 @@ which will collapse that post and all the children.
 \begin{itemize}
   \item Collapsing can be toggled by clicking on the response again
 \end{itemize}
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/collapse_post_responses.png}\linebreak
 
 \subsection{Secure HTTPS}
 All communication should be through an ssl connection.
@@ -127,6 +150,9 @@ Content should scale with the size of the viewport/screen
 \begin{itemize}
   \item Default viewport size should be defined in the app manifest
 \end{itemize}
+\subsubsection{UML Sequence Diagram/Spike}
+\includegraphics[scale=0.5]{img/responsive_web_page.png}\linebreak
+
 
 \section{The Stories due Next Week}
 
