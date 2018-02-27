@@ -133,9 +133,16 @@ internet. All urls should load.
 \includegraphics[scale=0.5]{img/10.png}\linebreak
 
 \subsection{Browser Compatibility}
-Web app should work in both chrome and safari.
-\subsubsection{Corresponding Tasks}
-	The PWA will work across different web browsers.  Our primary targets are safari on iOS and chrome on android.  Because this depends on the entire app, it will be due late in the development process once nearly everything is implemented.  This allows us to make things compatible all at once instead of continually needing to update things.  Paired Programming time: 4 hours.
+Spike Description for Browser Compatibility
+
+Talktatiel should be designed to be compatible with modern browsers, meaning that it will display and behave the same on targeted browsers.  Talkatiel is meant to be a PWA, so we don’t need to worry about traditional desktop browsers.  We are dealing with mobile devices, so we want to make our PWA work on mobile browsers.  The primary browsers on the mobile market are Chrome, Safari and Firefox.  In order to properly implement compatibility, we must focus on two things: programming patterns and testing.  We must establish a set of programming practices that lend themselves to writing compatible code.  Two things that will help with this are doctyping and conditional comments.  Doctyping signals to the browser what sort of document it is dealing with.  Different documents have different ways of displaying, so making it clear that the PWA is a .aspx and not .asp will result in browsers correctly handling our site.  Conditional comments are sections of code that are conditionally commented.  For example, say we have this section of code:
+
+\includegraphics[scale=0.5]{img/ConditionalStyleSheet.png}\linebreak
+
+This section changes the style sheet link depending on if the browser is internet explorer or not.  If it is internet explorer, is loads a CSS file that has hacks that make internet explorer work.  If the browser is not internet explorer, it uses a cross-browser CSS file that behaves better.  We will not have as much of an issue with compatibility because we do not need to cater to Internet Explorer or Edge.
+
+Also, we need to place an emphasis on testing.  We need to go beyond just running it and seeing what happens.  We will need to test on a variety of devices and browsers, along with testing tools such as Lighthouse.  We will use tools online where you provide a URL and it tests the site on selected devices and browsers.  This will help us make sure that the user experience of our PWA is the same across the board.  Tools like Lighthouse will test the PWA and make sure that the website behaves as a website should and follows the website best practices set out by W3.
+
 \subsubsection{UML Sequence Diagram/Spike}
 
 \subsection{View newly created Post}
