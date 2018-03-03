@@ -30,10 +30,9 @@
 \contentsline {subsubsection}{\numberline {1.10.1}Corresponding Tasks}{11}
 \contentsline {subsubsection}{\numberline {1.10.2}UML Sequence Diagram/Spike}{12}
 \contentsline {subsection}{\numberline {1.11}Browser Compatibility}{12}
-\contentsline {subsubsection}{\numberline {1.11.1}Corresponding Tasks}{12}
-\contentsline {subsubsection}{\numberline {1.11.2}UML Sequence Diagram/Spike}{12}
+\contentsline {subsubsection}{\numberline {1.11.1}UML Sequence Diagram/Spike}{13}
 \contentsline {subsection}{\numberline {1.12}View newly created Post}{13}
-\contentsline {subsubsection}{\numberline {1.12.1}Corresponding Tasks}{13}
+\contentsline {subsubsection}{\numberline {1.12.1}Corresponding Tasks}{14}
 \contentsline {subsubsection}{\numberline {1.12.2}UML Sequence Diagram/Spike}{14}
 \contentsline {subsection}{\numberline {1.13}Collapse Post Responses}{14}
 \contentsline {subsubsection}{\numberline {1.13.1}Corresponding Tasks}{14}

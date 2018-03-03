@@ -1,5 +1,5 @@
 all:
-	pdflatex TalkaTiel-USSA.tex
+	pdflatex TalkaTiel-FIS.tex
 	rm *.aux
 	rm *.log
 clean:
