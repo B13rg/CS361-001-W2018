@@ -1,5 +1,0 @@
-\contentsline {section}{\numberline {1}Product Release}{1}
-\contentsline {section}{\numberline {2}User Story}{1}
-\contentsline {section}{\numberline {3}Tests}{1}
-\contentsline {section}{\numberline {4}Design Changes and rationale}{1}
-\contentsline {section}{\numberline {5}Meeting Report}{1}

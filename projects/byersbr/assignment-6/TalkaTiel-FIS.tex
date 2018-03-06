@@ -4,13 +4,13 @@
 \graphicspath{ {./} }
 
 
-\title{Talkatiel Software Requirements and Planning}
-\author{Brendan Byers, Ryan Sisco, Iliana J, Aidan Grimshaw}
+\title{Talkatiel FIS}
+\author{Brendan Byers, Ryan Sisco, Iliana J, Aidan Grimshaw, Yufei Zeng}
 \date{\today}
 
 \begin{document}
 \begin{center}
-      \Large\textbf{User Stories and Set-up Assignment}\\
+      \Large\textbf{}\\
       \large\textit{Brendan Byers, Ryan Sisco, Iliana J, Aidan Grimshaw, Yufei Zeng}\\
       \large{byersbr, siscor, javieri, grimshaa, zengyu}\\
    \end{center}
@@ -19,11 +19,11 @@
 \section{Product Release}
    \subsection{Server Side Implimentation}
    Currently the server code can be downloaded and run locally.  By cloning the repository located at\begin{verbatim} https://github.com/B13rg/Talkatiel_API.git \end{verbatim}one can run the server.  There is also extensive documentation detailing all the steps that need to be taken to run the server.  There is also a SQL script that will create a database when run.  This can be used to create a database for use on a different engine.  Currently it is configured to run on the localhost on port 5002.  This can be tested to navigating to \begin{verbatim}127.0.0.1:5002/Posts/New \end{verbatim}where you can see the raw Json output of a post.  In the repository there is also an sqlite database that is run alongside the python code.  This will connect with the python to respond to different sql queries.  It is fully functioning, and the only thing left to do is test it, and find a permanent URL.
-   
+
    \subsection{Client Side Implimentation}
 \section{User Story}
       \subsection{Add a post}
-      The server side group worked on adding this ability to the api.  Currently a user is able to POST a json string to the server.  The server takes the json and decodes a post object out of it.  Then the post is passed into the database to be retrieved later.  Implimentation of this took 2 hours.  Currently we still need to test the implimentation with more extensive unit tests.     
+      The server side group worked on adding this ability to the api.  Currently a user is able to POST a json string to the server.  The server takes the json and decodes a post object out of it.  Then the post is passed into the database to be retrieved later.  Implimentation of this took 2 hours.  Currently we still need to test the implimentation with more extensive unit tests.
       \subsection{Add a Comment}
       The server side group worked on adding this ability to the api.  Currently a user is able to POST a json string to the server.  The server takes the json and decodes a comment object out of it.  Then the post is passed into the database to be retrieved later.  Implimentation of this took 1 hour.  It was extremely similar to adding a post.  Currently we still need to test the implimentation with more extensive unit tests.
       \subsection{Like/Dislike}
@@ -51,7 +51,12 @@ Currently to test the server side of things one needs to manually query the API 
 \subsection{Server Side Implimentation}
 For the most part the server group stayed very close to original design.  To design the database we worked off the UML design digrams we designed earlier.  This allowed us to see what fields we needed to include for each table.  We added an extra table not originally in the design doc to handle reports.  We found there was no way to keep track of reports server side, so we added a table to handle it.  It keeps track of the user who reported it, the post in question, and the text of the users report.  By having it's own table it can also be queried seperatly instead of having to sort through who knows what.
 \section{Meeting Report}
+\subsection{Schedule for next week}
 
+\subsection{Progress made this week}
+This week we developed several basic user interface template prototypes, as well as built the infrastructure that will allow us to easily build more user interface elements to mobile in the future.
+\subsection{Plans and goals for next week}
+Next week we plan to refactor out our user interface code to improve code functionality, modularity and style. We will build on the knowlege that we gained this week to develop full features with robust templating. On the Network infrastructure side, we will start setting up servers for the api and the website/app so that the general public can access it when we are done.
 \subsection{Team Member Contributions}
 \begin{itemize}
       \item Server Side - API - Brendan Byers
