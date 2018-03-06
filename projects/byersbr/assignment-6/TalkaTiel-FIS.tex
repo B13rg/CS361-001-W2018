@@ -18,6 +18,24 @@
 \tableofcontents
 \section{Product Release}
 \section{User Story}
+      \subsection{Add a post}
+      The server side group worked on adding this ability to the api.  Currently a user is able to POST a json string to the server.  The server takes the json and decodes a post object out of it.  Then the post is passed into the database to be retrieved later.  Implimentation of this took 2 hours.  Currently we still need to test the implimentation with more extensive unit tests.      
+      \subsection{Add a Comment}
+      The server side group worked on adding this ability to the api.  Currently a user is able to POST a json string to the server.  The server takes the json and decodes a comment object out of it.  Then the post is passed into the database to be retrieved later.  Implimentation of this took 1 hour.  It was extremely similar to adding a post.  Currently we still need to test the implimentation with more extensive unit tests.
+      \subsection{Like/Dislike}
+      The server side group implimentated a way to like and dislike posts.  It is done by throwing a 1 or a 0 to the url of the post.  This will look like this: https://Talkatiel.com/Posts/<int:postID>/<int:voteType> .  The server decodes the url and applies the proper vote to the given post.  Implimentation took around 3 hours.  Currently there needs to be more testing done.
+      \subsection{Report}
+      \subsection{Delete}
+      \subsection{Refresh}
+      \subsection{Sort}
+      \subsection{Add to Favorites}
+      \subsection{Offline Favorites}
+      \subsection{Offline Compatability}
+      \subsection{View Newly Created Post}
+      \subsection{Collapse Post Responses}
+      \subsection{Secure HTTPS Connection}
+      \subsection{Save Website as App on Phone}
+      \subsection{Responsive Web Page}
 \section{Tests}
 \section{Design Changes and rationale}
 \section{Meeting Report}
