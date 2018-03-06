@@ -46,9 +46,20 @@
       \subsection{Save Website as App on Phone}
       \subsection{Responsive Web Page}
 \section{Tests}
+\subsection{Server Side Implimentation}
+Currently to test the server side of things one needs to manually query the API themselves.  The next step in our plan is to add more unit tests.  We plan on making a python script that will test a given URL and return it's status and how it's doing.  It will be able to do through this through a mix of manually crafted GET and POST requests and pinging.  This will let us quickly and easily see if anything is going wrong.
 \section{Design Changes and rationale}
+\subsection{Server Side Implimentation}
 For the most part the server group stayed very close to original design.  To design the database we worked off the UML design digrams we designed earlier.  This allowed us to see what fields we needed to include for each table.  We added an extra table not originally in the design doc to handle reports.  We found there was no way to keep track of reports server side, so we added a table to handle it.  It keeps track of the user who reported it, the post in question, and the text of the users report.  By having it's own table it can also be queried seperatly instead of having to sort through who knows what.
 \section{Meeting Report}
+
+\subsection{Team Member Contributions}
+\begin{itemize}
+      \item Server Side - API - Brendan Byers
+      \item Server Side - Database - Iliana Javier
+      \item Server Side - User Story - Brendan Byers and Iliana Javier
+      \item Server Side - Design Changes - Brendan Byers and Iliana Javier
+\end{itemize}
 
 
 
