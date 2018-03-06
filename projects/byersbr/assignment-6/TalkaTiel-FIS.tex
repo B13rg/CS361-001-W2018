@@ -50,6 +50,8 @@ Currently to test the server side of things one needs to manually query the API 
 \section{Design Changes and Rationale}
 \subsection{Server Side Implimentation}
 For the most part the server group stayed very close to original design.  To design the database we worked off the UML design digrams we designed earlier.  This allowed us to see what fields we needed to include for each table.  We added an extra table not originally in the design doc to handle reports.  We found there was no way to keep track of reports server side, so we added a table to handle it.  It keeps track of the user who reported it, the post in question, and the text of the users report.  By having it's own table it can also be queried seperatly instead of having to sort through who knows what.
+\subsection{Frontend Implimentation}
+We have stayed very close to our original design. The changes we have right now are temporary and easy to change. We do not have some things matching such as colors, but we have every correct button and card in position. Styling the rest will be very easy. Our buttons do not currently send data to our actual server. This was done intentionally in order to build the backend and frontend at the same time. We are currently fixing the color scheme as we get closer to connecting our mobile app with the database.
 \section{Meeting Report}
 
 \subsection{Team Member Contributions}
