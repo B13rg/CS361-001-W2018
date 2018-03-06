@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Product Release}{1}
+\contentsline {subsection}{\numberline {1.1}Server Side Implementation}{1}
+\contentsline {subsection}{\numberline {1.2}Client-Side Implementation}{1}
+\contentsline {section}{\numberline {2}User Story}{1}
+\contentsline {subsection}{\numberline {2.1}Add a post}{1}
+\contentsline {subsection}{\numberline {2.2}Add a Comment}{1}
+\contentsline {subsection}{\numberline {2.3}Like/Dislike}{2}
+\contentsline {subsection}{\numberline {2.4}Report}{2}
+\contentsline {subsection}{\numberline {2.5}Delete}{2}
+\contentsline {subsection}{\numberline {2.6}Refresh}{2}
+\contentsline {subsection}{\numberline {2.7}Sort}{2}
+\contentsline {subsection}{\numberline {2.8}View Newly Created Post}{3}
+\contentsline {subsection}{\numberline {2.9}Secure HTTPS Connection}{3}
+\contentsline {subsection}{\numberline {2.10}Save Website as App on Phone}{3}
+\contentsline {subsection}{\numberline {2.11}Responsive Web Page}{3}
+\contentsline {section}{\numberline {3}Tests}{4}
+\contentsline {subsection}{\numberline {3.1}Server Side Implementation}{4}
+\contentsline {section}{\numberline {4}Design Changes and Rationale}{4}
+\contentsline {subsection}{\numberline {4.1}Server Side Implementation}{4}
+\contentsline {subsection}{\numberline {4.2}Frontend Implementation}{4}
+\contentsline {section}{\numberline {5}Meeting Report}{5}
+\contentsline {subsection}{\numberline {5.1}Schedule for next week}{5}
+\contentsline {subsection}{\numberline {5.2}Progress made this week}{5}
+\contentsline {subsection}{\numberline {5.3}Plans and goals for next week}{5}
+\contentsline {subsection}{\numberline {5.4}Team Member Contributions}{5}
