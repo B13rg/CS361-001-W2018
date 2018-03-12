@@ -3,6 +3,6 @@ all:
 	rm *.aux
 	rm *.log
 clean:
-	rm *.aux
-	rm *.log
 	rm *.pdf
+	# rm *.aux
+	# rm *.log
