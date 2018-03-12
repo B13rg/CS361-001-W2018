@@ -10,10 +10,10 @@
 
 \begin{document}
 \begin{center}
-      \Large\textbf{TalkaTiel Second Implentation System}\\
-      \large\textit{Brendan Byers, Ryan Sisco, Iliana J, Aidan Grimshaw, Yufei Zeng}\\
-      \large{byersbr, siscor, javieri, grimshaa, zengyu}\\
-   \end{center}
+ \Large\textbf{TalkaTiel Second Implentation System}\\
+ \large\textit{Brendan Byers, Ryan Sisco, Iliana J, Aidan Grimshaw, Yufei Zeng}\\
+ \large{byersbr, siscor, javieri, grimshaa, zengyu}\\
+\end{center}
 
 \tableofcontents
 \section{Product Release} \subsection{Server Side Implementation} Currently the
@@ -28,9 +28,15 @@ the localhost on port 5002.  This can be tested to navigating to
 Json output of a post.  In the repository there is also an sqlite database that
 is run alongside the python code.  This will connect with the python to respond
 to different sql queries.  It is fully functioning, and the only thing left to
-do is test it, and find a permanent URL. By midweek, we plan to start permanent
+do is test it, and find a permanent URL. Additionally, you can test GET and POST
+reqeusts at our API server URL, aidangrimshaw.pythonanywhere.com, using the
+documentation located on the github repo.
+
+\subsection{Client-Side Implementation}
+By midweek, we plan to start permanent
 hosting with google app engine.
 
+<<<<<<< HEAD
 \subsection {Client Side Implementation}
 Product URL:\begin{verbatim} https://github.com/thegrims/talkatiel-ui \end{verbatim}
 The product is current working on a basic level. We are able to consistently pull data and connect to the server. We have added several test posts and are able to bring them into cards on our mobile client. We are currently working on developing our fingerprinting and identifying users individually and tying them to their posts server side only. This will take some time and testing, and will only be implemented after a series of testing and penetration testing. When we implement this, we need to be absolutely sure that the data is secure, because we will be dealing with sensitive data. 
@@ -38,28 +44,30 @@ The product is current working on a basic level. We are able to consistently pul
 
 Our CSS is looking as intended. We have built it to be easy to change later on. We are not completely decided on a color, however it works with most. We have yet to implement animations. We do have screen rotation completed for mobile devices, and the app grows in size accordingly. We have tested the app on IOS and Android, with a consistent look between the two.
    \subsection{Client-Side Implementation}
+=======
+>>>>>>> 8e38118ad2144c0e86932dc3694cd61300c82c7e
 \section{User Story}
-      \subsection{Add a post}
+\subsection{Add a post}
 
-      \subsection{Add a Comment}
+\subsection{Add a Comment}
 
-      \subsection{Like/Dislike}
+\subsection{Like/Dislike}
 
-      \subsection{Report}
+\subsection{Report}
 
-      \subsection{Delete}
+\subsection{Delete}
 
-      \subsection{Refresh}
+\subsection{Refresh}
 
-      \subsection{Sort}
+\subsection{Sort}
 
-      \subsection{View Newly Created Post}
+\subsection{View Newly Created Post}
 
-      \subsection{Secure HTTPS Connection}
+\subsection{Secure HTTPS Connection}
 
-      \subsection{Save Website as App on Phone}
+\subsection{Save Website as App on Phone}
 
-      \subsection{Responsive Web Page}
+\subsection{Responsive Web Page}
 
 \section{Tests}
 \subsection{Server Side Implementation}
@@ -68,14 +76,34 @@ Our CSS is looking as intended. We have built it to be easy to change later on. 
 
 \section{Refactoring}
 
-    Our project is still being developed in parts. For the most part, we have been working towards building a working application and database, and slowly cleaning up as we go. This has lead to some sloppy, duplicate code. However, we have been making progress building. Once one of our members has completed his/her section, while waiting for others to complete, they have cleaned up their code and make it easier to follow. While this isn’t a top priority right now, we believe that refactoring our code as we complete files will help us in the future. It will also allow us to switch duties and work on each other's code without too much confusion.
+Our project is still being developed in parts. For the most part, we have
+been working towards building a working application and database, and slowly
+cleaning up as we go. This has lead to some sloppy, duplicate code. However,
+we have been making progress building. Once one of our members has completed
+his/her section, while waiting for others to complete, they have cleaned up
+their code and make it easier to follow. While this isn’t a top priority
+right now, we believe that refactoring our code as we complete files will
+help us in the future. It will also allow us to switch duties and work on
+each other's code without too much confusion.
 
-    We ended up doing minor refactoring. While working on the client side development, we ended up making templates for common, reoccurring elements. This has been useful while developing other parts of the application, when attempting to make the styling similar. We have been able to remain somewhat consistent.
+We ended up doing minor refactoring. While working on the client side
+development, we ended up making templates for common, reoccurring elements.
+This has been useful while developing other parts of the application, when
+attempting to make the styling similar. We have been able to remain somewhat
+consistent.
 
-    In addition to these changes, we have also changed variable names before committing to the shared repository. This helps those who are viewing changes follow along. Many of us have been saving files offline before pushing, forcing us to correct changes before pushing. By doing this, we are not stressed to push our work as a simple “backup” of our work. Saving and updating locally/remotely before pushing to a shared repo has helped us stay consistent and organized.
+In addition to these changes, we have also changed variable names before
+committing to the shared repository. This helps those who are viewing
+changes follow along. Many of us have been saving files offline before
+pushing, forcing us to correct changes before pushing. By doing this, we are
+not stressed to push our work as a simple “backup” of our work. Saving and
+updating locally/remotely before pushing to a shared repo has helped us stay
+consistent and organized.
 
-    Making these changes has helped us stay organized and also limit the “turnover” time between switching parts and tasks. For instance, when two people switched files to review code, we were able to follow along much easier when the code was simplified.
-
+Making these changes has helped us stay organized and also limit the
+“turnover” time between switching parts and tasks. For instance, when two
+people switched files to review code, we were able to follow along much
+easier when the code was simplified.
 
 \section{Tests}
 
