@@ -30,7 +30,7 @@ is run alongside the python code.  This will connect with the python to respond
 to different sql queries.  It is fully functioning, and the only thing left to
 do is test it, and find a permanent URL. Additionally, you can test GET and POST
 reqeusts at our API server URL, aidangrimshaw.pythonanywhere.com, using the
-documentation located on the github repo.
+documentation located on our API github repo.
 
 \subsection{Client-Side Implementation}
 By midweek, we plan to start permanent
@@ -63,6 +63,25 @@ hosting with google app engine.
 \subsection{Server Side Implementation}
 
 \section{Design Changes and Rationale}
+\subsection{Server Side Implementation}
+For the most part the server group stayed very close to original design.  To
+design the database, we worked off the UML design diagrams we designed earlier.
+This allowed us to see what fields we needed to include for each table.  We
+added an extra table not originally in the design doc to handle reports.  We
+found there was no way to keep track of reports server side, so we added a table
+to handle it.  It keeps track of the user who reported it, the post in question,
+and the text of the user’s report.  By having its own table, it can also be
+queried separately instead of having to sort through who knows what.
+Additionally, we modified our api server implementation so that it was served
+remotely from a different service than the client side server, and so that the
+API would be better equiped to handle POST requests.
+\subsection{Frontend Implementation}
+We have stayed very close to our original design. We currently are finishing up
+our implementation of the main posts page, and will switch our focus to the
+implemetation of the posts page and further code cleanup / refactoring of the
+posts page. Visual elements are styled slightly differently for ease of use, and
+commenting functionality is removed in this version to ease the implementation
+of our minimum viable product (MVP).
 
 \section{Refactoring}
 

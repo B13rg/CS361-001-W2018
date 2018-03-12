@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Product Release}{1}
 \contentsline {subsection}{\numberline {1.1}Server Side Implementation}{1}
-\contentsline {subsection}{\numberline {1.2}Client-Side Implementation}{3}
+\contentsline {subsection}{\numberline {1.2}Client-Side Implementation}{2}
 \contentsline {section}{\numberline {2}User Story}{3}
 \contentsline {subsection}{\numberline {2.1}Add a post}{3}
 \contentsline {subsection}{\numberline {2.2}Add a Comment}{3}
@@ -16,7 +16,9 @@
 \contentsline {section}{\numberline {3}Tests}{3}
 \contentsline {subsection}{\numberline {3.1}Server Side Implementation}{3}
 \contentsline {section}{\numberline {4}Design Changes and Rationale}{3}
-\contentsline {section}{\numberline {5}Refactoring}{3}
+\contentsline {subsection}{\numberline {4.1}Server Side Implementation}{3}
+\contentsline {subsection}{\numberline {4.2}Frontend Implementation}{3}
+\contentsline {section}{\numberline {5}Refactoring}{4}
 \contentsline {section}{\numberline {6}Tests}{4}
 \contentsline {section}{\numberline {7}Meeting Report}{4}
 \contentsline {subsection}{\numberline {7.1}Schedule for next week}{4}
