@@ -14,14 +14,12 @@
 \contentsline {subsection}{\numberline {2.10}Save Website as App on Phone}{3}
 \contentsline {subsection}{\numberline {2.11}Responsive Web Page}{3}
 \contentsline {section}{\numberline {3}Tests}{3}
-\contentsline {subsection}{\numberline {3.1}Server Side Implementation}{3}
-\contentsline {section}{\numberline {4}Design Changes and Rationale}{3}
-\contentsline {subsection}{\numberline {4.1}Server Side Implementation}{3}
-\contentsline {subsection}{\numberline {4.2}Frontend Implementation}{3}
+\contentsline {section}{\numberline {4}Design Changes and Rationale}{4}
+\contentsline {subsection}{\numberline {4.1}Server Side Implementation}{4}
+\contentsline {subsection}{\numberline {4.2}Frontend Implementation}{4}
 \contentsline {section}{\numberline {5}Refactoring}{4}
-\contentsline {section}{\numberline {6}Tests}{4}
-\contentsline {section}{\numberline {7}Meeting Report}{4}
-\contentsline {subsection}{\numberline {7.1}Schedule for next week}{4}
-\contentsline {subsection}{\numberline {7.2}Progress made this week}{4}
-\contentsline {subsection}{\numberline {7.3}Plans and goals for next week}{4}
-\contentsline {subsection}{\numberline {7.4}Team Member Contributions}{4}
+\contentsline {section}{\numberline {6}Meeting Report}{5}
+\contentsline {subsection}{\numberline {6.1}Schedule for next week}{5}
+\contentsline {subsection}{\numberline {6.2}Progress made this week}{5}
+\contentsline {subsection}{\numberline {6.3}Plans and goals for next week}{5}
+\contentsline {subsection}{\numberline {6.4}Team Member Contributions}{5}
