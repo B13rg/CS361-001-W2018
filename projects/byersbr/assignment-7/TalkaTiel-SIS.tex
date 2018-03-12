@@ -64,7 +64,12 @@ Our CSS is looking as intended. We have built it to be easy to change later on. 
 \subsection{Responsive Web Page}
 
 \section{Tests}
-\subsection{Server Side Implementation}
+
+The server side of this project calculates and delivers it to the client.  Therefore, it is important to properly test the API service so that it either returns the complete set of data or returns an error.  It is relativly easy to test this.  A script was created that goes through and tests each part of the API.  First it checks to see if the API is online.  It does this by using the Ping tool to test the url of the API, in this case http://aidangrimshaw.pythonanywhere.com.  This determines if the aPI is even able to recieve anything.  Next it goes through each part of the API and checks to make sure it works.  This portion is done using the CURL tool.  The command used looks something like: 
+
+curl -H \"Content-Type: application/json\" -X POST -d \'{ \"content\": \"Fred\",\"userID\": 343434,\"title\":\"Aiden\"}' http://aidangrimshaw.pythonanywhere.com/Posts 
+
+This will make a POST request with data to the server.  This data will be added to the database.  The \"-H \'Content-Type: application/json\" declares that the header for the request markes the content type as json.  This will signal to the server to look for a data section and parse it as Json.  The \"-X POST\" marks what type this request is.  Because there is a data section curl assumes it is a POST request, but it is good to mark this just in case.  The \"-d\" marks the beginning of the data section, and you can see the raw json data that is passed to the server.  Finally, there is the URL address to send this request to.  For each POST and GET outlet in the API there is a specific curl test for it.  The script runs each of the tests and records the response.  The server responds with how the request went, and will signal to the client if it was successful.  If is not successful, the server will alert the client that the request failed.  We are able to parse whatever response the server makes and record it with the test.  After all the tests are run, the script looks at which tests failed, lists them, and prints any extra data it recieved.  This could be response data or error codes.  This allows us to quickly test the server when we make changes to confirm that nothing was broken.
 
 \section{Design Changes and Rationale}
 \subsection{Server Side Implementation}
@@ -117,10 +122,6 @@ Making these changes has helped us stay organized and also limit the
 “turnover” time between switching parts and tasks. For instance, when two
 people switched files to review code, we were able to follow along much
 easier when the code was simplified.
-
-\section{Tests}
-
-
 
 \section{Meeting Report}
 \subsection{Schedule for next week}
