@@ -3,23 +3,22 @@
 \contentsline {subsection}{\numberline {1.2}Client-Side Implementation}{2}
 \contentsline {section}{\numberline {2}User Story}{2}
 \contentsline {subsection}{\numberline {2.1}Add a post}{2}
-\contentsline {subsection}{\numberline {2.2}Add a Comment}{3}
-\contentsline {subsection}{\numberline {2.3}Like/Dislike}{3}
-\contentsline {subsection}{\numberline {2.4}Report}{3}
-\contentsline {subsection}{\numberline {2.5}Delete}{3}
-\contentsline {subsection}{\numberline {2.6}Refresh}{3}
-\contentsline {subsection}{\numberline {2.7}Sort}{3}
-\contentsline {subsection}{\numberline {2.8}View Newly Created Post}{4}
-\contentsline {subsection}{\numberline {2.9}Secure HTTPS Connection}{4}
-\contentsline {subsection}{\numberline {2.10}Save Website as App on Phone}{4}
-\contentsline {subsection}{\numberline {2.11}Responsive Web Page}{4}
-\contentsline {section}{\numberline {3}Tests}{4}
-\contentsline {section}{\numberline {4}Design Changes and Rationale}{5}
-\contentsline {subsection}{\numberline {4.1}Server Side Implementation}{5}
-\contentsline {subsection}{\numberline {4.2}Frontend Implementation}{5}
-\contentsline {section}{\numberline {5}Refactoring}{5}
-\contentsline {section}{\numberline {6}Meeting Report}{6}
-\contentsline {subsection}{\numberline {6.1}Schedule for next week}{6}
-\contentsline {subsection}{\numberline {6.2}Progress made this week}{6}
-\contentsline {subsection}{\numberline {6.3}Plans and goals for next week}{6}
-\contentsline {subsection}{\numberline {6.4}Team Member Contributions}{6}
+\contentsline {subsection}{\numberline {2.2}Add a Comment}{5}
+\contentsline {subsection}{\numberline {2.3}Like/Dislike}{5}
+\contentsline {subsection}{\numberline {2.4}Report}{5}
+\contentsline {subsection}{\numberline {2.5}Delete}{5}
+\contentsline {subsection}{\numberline {2.6}Refresh}{5}
+\contentsline {subsection}{\numberline {2.7}Sort}{8}
+\contentsline {subsection}{\numberline {2.8}View Newly Created Post}{8}
+\contentsline {subsection}{\numberline {2.9}Secure HTTPS Connection}{8}
+\contentsline {subsection}{\numberline {2.10}Save Website as App on Phone}{8}
+\contentsline {subsection}{\numberline {2.11}Responsive Web Page}{8}
+\contentsline {section}{\numberline {3}Tests}{9}
+\contentsline {section}{\numberline {4}Design Changes and Rationale}{9}
+\contentsline {subsection}{\numberline {4.1}Server Side Implementation}{9}
+\contentsline {subsection}{\numberline {4.2}Frontend Implementation}{10}
+\contentsline {section}{\numberline {5}Refactoring}{10}
+\contentsline {section}{\numberline {6}Meeting Report}{10}
+\contentsline {subsection}{\numberline {6.1}Progress Made this Week}{10}
+\contentsline {subsection}{\numberline {6.2}Plans for Next Week}{11}
+\contentsline {subsection}{\numberline {6.3}Team Member Contributions}{11}
