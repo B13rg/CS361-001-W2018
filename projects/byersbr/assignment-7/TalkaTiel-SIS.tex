@@ -53,26 +53,81 @@ and Android, with a consistent look between the two.
 \section{User Story}
 
 \subsection{Add a post}
+The server side group worked with the expo app. Aidan got posts mapped that all
+of the posts pulled from the database show up in the page. Axios parses the json
+info into string. For each post that post object is constructed and pushed on to
+a list of post. Post list is mapped on to card objects to fill them up with
+info. Implementation of this took 2 hours. All posts are showing the correct
+context as expected. Currently we still need to test the implementation with
+more extensive unit tests. UML is useless in this part due to all abstract and
+not concrete.
 
 \subsection{Add a Comment}
+The server side group worked with the expo app. After 1 hour implementation,
+user is able to sent the json string to the server, and server sends back the
+post from database. All comments are showing the correct context as expected.
+Currently we still need to test the implementation with more extensive unit
+tests. UML is useless in this part due to all abstract and not concrete.
 
 \subsection{Like/Dislike}
+The server side group worked with this part: when a user votes, their “+1” or
+“-1” is sent to the server, as long as they have not voted on that post already,
+then the server is updated. It has been done last week. All like/dislike’s
+numbers are showing the correct context as expected.UML is useless in this part
+due to all abstract and not concrete.
 
 \subsection{Report}
+The server side group worked with this part: Brendan uses a post method to send
+the report data. The userID will be the ID of the reporting user. The reason
+will be the text of the reason for the report, limit 1000 characters. We still
+need time to fix how admins access the reports from database. It might need 2
+hours more. UML is useless in this part due to all abstract and not concrete.
 
 \subsection{Delete}
+The server side group worked with this part: deleting a post by sending a GET
+request to the URL to remove the post with that postID. We still need time to
+fix that only user who has correct key can delete the post. It might need 2
+hours more. UML is useless in this part due to all abstract and not concrete.
 
 \subsection{Refresh}
+The server side worked with this part: we did spend 6 hours to implement this
+portion to refresh and retrieve new posts on the device in last assignment.
+Currently we still need to test the implementation with more extensive unit
+tests.It might take 2 hours more. UML is useless in this part due to all
+abstract and not concrete.
 
 \subsection{Sort}
+The server side worked with this part: when clicked, the page alerts the user of
+the sorting type and then changes the sorting on the next click. They will be
+able to cycle through all of the different types. Currently we still need to
+test the implementation with more extensive unit tests.It might take 2 hours
+more.UML is useless in this part due to all abstract and not concrete.
 
 \subsection{View Newly Created Post}
+The server side worked with this part:When a post is created by a user, when
+they go back to the feed they should see it immediately if sorted by
+new.Currently we still need to test the implementation with more extensive unit
+tests.It might take 2 hours more.UML is useless in this part due to all abstract
+and not concrete.
 
 \subsection{Secure HTTPS Connection}
+The server side group worked with this part. We are still need time to change
+the requests to the API to HTTPS instead of HTTP. It might take 2 hours more.
+UML is useless in this part due to all abstract and not concrete.
 
 \subsection{Save Website as App on Phone}
+We are still looking for a more convenient way to run our Talkatiel on the phone
+without installing a bunch of dependencies. Currently, our project behaves like
+an app and it’s just a view thing for the time being. However it needs to be
+compiled to android and put on the play store to be used easily by a consumer.
+We might need a lot of time to fix this issue. UML is useless in this part due
+to all abstract and not concrete.
 
 \subsection{Responsive Web Page}
+The front end team worked whith this part, and it has been done in last
+assignment. All context are showing as expected.The UML diagram was very useful
+in this case. It helped guide the project and understand what needed to be added
+for the base.
 
 \section{Tests}
 
