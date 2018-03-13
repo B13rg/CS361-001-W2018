@@ -54,9 +54,16 @@ and Android, with a consistent look between the two.
 
 \subsection{Add a post}
 
-A user can now add a post using the client side program.  They are able to set a title and text, and post it for everyone to see.  When it is sent to the server the server will add it to the database, so then it may be retrieved by other users.
+A user can now add a post using the client side program.  They are able to set a 
+title and text, and post it for everyone to see.  When it is sent to the server 
+the server will add it to the database, so then it may be retrieved by other users.
 
-As part of adding a post we wanted to filter out bad words.  This will help cut down on bullying in the online community of our project.  To do this we created a special function that takes a post's text and checks it against a wordlist.  The wordlist is a seperate file so we are able to update as need be.  If we find new words we can just add them to the end of the list.  This means the client won't have to recompile the app every time we make a change to the wordlist.
+As part of adding a post we wanted to filter out bad words.  This will help cut 
+down on bullying in the online community of our project.  To do this we created 
+a special function that takes a post's text and checks it against a wordlist.  
+The wordlist is a seperate file so we are able to update as need be.  If we find 
+new words we can just add them to the end of the list.  This means the client 
+won't have to recompile the app every time we make a change to the wordlist.
 \begin{center}
 	\includegraphics[scale=0.75]{img/create_post}\linebreak
 	\textbf{Class Diagram}
@@ -64,7 +71,13 @@ As part of adding a post we wanted to filter out bad words.  This will help cut 
 
 \subsection{Add a Comment}
 
-Adding a comment works the same way as adding a post.  A user will choose content for the comment and then it will be checked and sent to the server.  When comments are retrieved from the server, the server will return all child comments for a post.  Before it would only return top level comments, but now they will be correctly tiered.  The comments will be displayed on the screen when people refresh the comments of a specific post.  In order to test this there are unit tests to test the server side of things.
+Adding a comment works the same way as adding a post.  A user will choose content 
+for the comment and then it will be checked and sent to the server.  When comments 
+are retrieved from the server, the server will return all child comments for a post.  
+Before it would only return top level comments, but now they will be correctly 
+tiered.  The comments will be displayed on the screen when people refresh the 
+comments of a specific post.  In order to test this there are unit tests to test 
+the server side of things.
 
 \subsection{Like/Dislike}
 
@@ -73,7 +86,14 @@ Adding a comment works the same way as adding a post.  A user will choose conten
 \subsection{Delete}
 
 \subsection{Refresh}
-Both the feed and refresh user stories are complete.  A user is now able to refresh the feed and view new posts.  In the image below, all the posts are test posts, but they are distinct.  The fact that this works means that both the client and server implimentations of creating a post and fetching posts are working.  Depending on the sort choice, posts will be sorted by Hot, New, and Top.  New simply returns the newest posts from the database but hot and top are calculated every 2 minutes.  This lowers the amount of queries the database needs to handle and instead allows the server to rely on the cache instead, which speeds up requests.  In order to test this there are unit tests to test the server side of things.
+Both the feed and refresh user stories are complete.  A user is now able to refresh the 
+feed and view new posts.  In the image below, all the posts are test posts, but they are 
+distinct.  The fact that this works means that both the client and server implimentations 
+of creating a post and fetching posts are working.  Depending on the sort choice, posts 
+will be sorted by Hot, New, and Top.  New simply returns the newest posts from the database 
+but hot and top are calculated every 2 minutes.  This lowers the amount of queries the 
+database needs to handle and instead allows the server to rely on the cache instead, which 
+speeds up requests.  In order to test this there are unit tests to test the server side of things.
 \begin{center}
 	\includegraphics[scale=0.75]{img/view_posts}\linebreak
 	\textbf{Class Diagram}
@@ -82,11 +102,21 @@ Both the feed and refresh user stories are complete.  A user is now able to refr
 \subsection{Sort}
 
 \subsection{View Newly Created Post}
-Because of how sorting by new is implemented, a user is able to see their posts immediately.  This is because there is no caching done on that sorting method.  This makes it so the database is queried every time.  If the server load was a lot, it would still be acceptable to cache things for even 5 minutes to lighten the load on the server.  The client is now able to request posts, so the client is able to see their newly submitted post when requested.
+Because of how sorting by new is implemented, a user is able to see their posts immediately.  
+This is because there is no caching done on that sorting method.  This makes it so the 
+database is queried every time.  If the server load was a lot, it would still be acceptable 
+to cache things for even 5 minutes to lighten the load on the server.  The client is now 
+able to request posts, so the client is able to see their newly submitted post when requested.
 
 \subsection{Secure HTTPS Connection}
 
-Luckily, this user story wasn't too difficult in the end.  The url where the server is hosted allows for https connections without any setup from us.  Therefore, we are able to blacklist all requests that are not through SSL.  This means that in order to make a request to the server, it needs to be made using https.  This will make sure that all content to and from the server is delivered over a secure connection.  It is nice that the Python Anywhere service has this ability, else we would need to genereate and sign the certificates ourselves which can be time consuming if done incorrectly.
+Luckily, this user story wasn't too difficult in the end.  The url where the server is hosted 
+allows for https connections without any setup from us.  Therefore, we are able to blacklist 
+all requests that are not through SSL.  This means that in order to make a request to the 
+server, it needs to be made using https.  This will make sure that all content to and from the 
+server is delivered over a secure connection.  It is nice that the Python Anywhere service has 
+this ability, else we would need to genereate and sign the certificates ourselves which can be 
+time consuming if done incorrectly.
 
 \subsection{Save Website as App on Phone}
 
@@ -180,12 +210,37 @@ people switched files to review code, we were able to follow along much
 easier when the code was simplified.
 
 \section{Meeting Report}
-\subsection{Schedule for next week}
+\subsection{Progress Made this Week}
 
-\subsection{Progress made this week}
+This week we continued to work on implementing our project as well as beginning 
+to test the software. We have completed most user stories created for this 
+project. The front end team created the basic UI and implemented scrolling and 
+button pressing interactions. More features such as screen rotation and making 
+sure the UI works on both IOS and Android were also implemented. Back end team 
+set up a temporary server running on two laptops and ported the application to 
+mobile.  
 
-\subsection{Plans and goals for next week}
+Project release and Refactoring statements were also written.  
+
+
+\subsection{Plans for Next Week}
+
+Next week we will wrap up the implementation of our app.  We will work on making
+sure all the aspects of the project work well together.  This means more integration
+tests and making sure there are as few bugs as possible.
 
 \subsection{Team Member Contributions}
+
+Server - Brendan Byers, Aiden Grimshaw, Ryan Sisco
+
+UI  - Aiden Grimshaw
+
+Testing - Brendan Byers
+
+Product Release - Ryan Sisco
+
+Meeting Report - Iliana Javier
+
+User Stories - Yufei Zeng
 
 \end{document}
