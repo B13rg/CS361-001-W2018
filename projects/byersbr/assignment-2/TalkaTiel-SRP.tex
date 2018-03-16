@@ -46,7 +46,10 @@ A portable web app means that the application will be availible from any link on
 \subsection{Functional Requirements}
 \subsubsection{logging}
 It is extremely important that we have the ability to log both what posts are made and who makes them.  Despite being an anonymous message board, users will only be anonymous to each other, not to the server.  This allows us to take action against posters that create content that is bullying or hate speach.  Without some form of logging there is no way to punish users who continually antagonize other users.
-
+\subsubsection{Communication}
+The app should have the ability to communicate to and from the server.  This will be to save new posts and such in the databse and to also request lists of posts to display to the user.  If the server and client are unable to communicate, the app is not functioning correctly.
+\subsubsection{Unique Identifiers}
+Every post, user, comment and report shoulf have a unique identifier.  None of these will have more than 1 identifier.  A user  should always have the same identifier, and should be blocked if they try and get a new one.  This is to prevent abuse.  By using these ID's as primary keys, we can stop them from being used twice.
 \subsubsection{Posting}
 User will be able to create and post in discussions anonymously.  They will be able to read and respond to posts by other users.  Users will be able to reply to a discussion, reply to another reply and vote on posts.
 \subsubsection{Moderation}
@@ -79,6 +82,9 @@ This allows us to set various settings for how the web app is displayed, such as
 In addition to a simple and intuitive user interface, there will also be a limited help section present.  It will show users how to do different basic functions of the application, such as navigating, posting, voting and the purpose.  The help section can walk a new user through the application and introduce them to the features.  By keeping the Talkatiel simple we can limit the amount of documentation needed while also improving user retention.
 \subsection{Major Features}
 \begin{itemize}
+      \item Unique Identifiel for each user, post, comment, and report
+      \item Save data in a database
+      \item Request and Send data to the server
       \item Post text as part of discussion
       \item Reply to other user's posts
       \item Ability to vote up or down other posts
@@ -86,7 +92,7 @@ In addition to a simple and intuitive user interface, there will also be a limit
       \item Ability to participate and view discussions depending on location
       \item Ability to report posts to Moderators or Administrators
 \end{itemize}
-\subsection{Minor Feature / Strech Goals}
+\subsection{Minor Feature / Long Term Goals}
 \begin{itemize}
       \item Ability to save discussions for later viewing.
       \item Ability for a user to view all of their own posts
