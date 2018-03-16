@@ -18,6 +18,8 @@
 \tableofcontents
 
 \section{Product Description}
+The purpose of Talkatiel is to create an anonymous message board app.  Users will be able to post posts and comments anonymously to each other.  This type of communication is similar to Yik-Tak and 4chan.  Users will be able to react and respond to other posts, along with reporting if the post in question goes against some rules.  This is the basic idea behind our app.  Here is a much more in depth description:
+
   When people move to a new area, it can be difficult to interact with new people.  People move away from their hometown and have an increased reliance on social networks such as facebook and twitter to feel connected to their friends and families at home.  This results in people not feeling part of their new communities.  The old communities have been left behind but people have trouble fully integrating into their new towns and neighborhoods.  College students are extremely susceptible to this feeling due to the fact that since 1986 the number of out-of-state freshmen has doubled\cite{item2}.
 
   Talkatiel provides a safe way to engage in a community without actually meeting anyone.  Users no longer need to fear going out to social events or community activities and dealing with terrifying or uncomfortable social situations.  This application allows people to integrate themselves into a community without great risk to themselves.  It can provide the deep seated need to be part of a community while also allowing people to be themselves without feel of social repercussion.  Talkatiel solves an issue that other social networks have trouble solving.  Traditional social networks are great at one to one or one to many interations, but have trouble with many to many interactions.  Talktatiel allows many to many interactions that provide a sense of community and place for users.
@@ -26,6 +28,7 @@
   \includegraphics[scale=0.75]{similarServices}
   \caption{This describes the types of communication present on different platforms. Note that Talktatiel is the only Many-to-Many platform.}
 \end{figure}
+
 	Talkatiel will be a Portable Web App, or a PWA.  This allows it to behave as an app does while also being much more accessible and easier to use for our end users.  The web app itself will consist primarily of 3 elements:   the service worker, the app shell, and the backend database.  A service worker is a chunk of code that exists outside the website.  It stays on a users device and works to cache and manage data for the web app.  It will also allow us to send push notifications to the user.  The app shell is the skeleton behind the web app.  It is stored on the users device, allowing the web app to load quickly.  It manages the basic user interface which is then filled with content from the server.  The database will store all posts along with identification and metadata information.
 
 	Previously this idea has been attempted by Yik-Yak.  Originally released in 2013, Yik-Yak set out to solve many of the problems we are solving with Talkatiel.  One of the biggest issues that Yik-Yak encountered was bullying and harassment on the platform\cite{item1}.  The only moderation present in the app was an automod that deleted posts that had certain words.  This did not effectively deal with hurtful messages, only invited people to figure out better ways to circumvent the moderation.  To solve this, Talkatiel will use both word filtering and actual people to moderate.  As seen on sites like reddit, using trusted users to moderate other users can be a strong and effective tool.
@@ -35,7 +38,11 @@
 	We will be designing this for use primarily on mobile device browsers.  These include Chrome, Safari, and Firefox.  Because of the way PWA’s are structured, they should also perform well on desktop browsers such as Chrome, Edge, and Safari.
 
   Talkatiel will use a service worker to precache parts of a web app, allowing it to load quickly the next time the user uses it.  This allows us to manage what the user sees while cutting down on network traffic and load times.  A service worker can perform its tasks even when the web app isn’t open.  This means in addition to caching and managing web app data, it also has the ability to allow users to access things offline, intercept HTTP/HTTPS requests and even send push notifications to the user.
+  
 \subsection{Functional Requirements}
+\subsubsection{logging}
+It is extremely important that we have the ability to log both what posts are made and who makes them.  Despite being an anonymous message board, users will only be anonymous to each other, not to the server.  This allows us to take action against posters that create content that is bullying or hate speach.  Without some form of logging there is no way to punish users who continually antagonize other users.
+
 \subsubsection{Posting}
 User will be able to create and post in discussions anonymously.  They will be able to read and respond to posts by other users.  Users will be able to reply to a discussion, reply to another reply and vote on posts.
 \subsubsection{Moderation}
