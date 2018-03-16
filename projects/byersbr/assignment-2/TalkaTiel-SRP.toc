@@ -5,8 +5,8 @@
 \contentsline {subsubsection}{\numberline {1.1.3}Geolocation}{4}
 \contentsline {subsubsection}{\numberline {1.1.4}Viewing Posts}{4}
 \contentsline {subsubsection}{\numberline {1.1.5}Reporting}{4}
-\contentsline {subsection}{\numberline {1.2}Non-Functional Requirements}{4}
-\contentsline {subsubsection}{\numberline {1.2.1}Secure}{4}
+\contentsline {subsection}{\numberline {1.2}Non-Functional Requirements}{5}
+\contentsline {subsubsection}{\numberline {1.2.1}Secure}{5}
 \contentsline {subsubsection}{\numberline {1.2.2}Network Independent}{5}
 \contentsline {subsubsection}{\numberline {1.2.3}Responsive}{5}
 \contentsline {subsubsection}{\numberline {1.2.4}Deep Linking}{5}
@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{\numberline {2.3.3}Preconditions}{8}
 \contentsline {subsubsection}{\numberline {2.3.4}Postconditions}{8}
 \contentsline {subsubsection}{\numberline {2.3.5}Flow of Events}{8}
-\contentsline {subsubsection}{\numberline {2.3.6}Quality Requirements}{8}
+\contentsline {subsubsection}{\numberline {2.3.6}Quality Requirements}{9}
 \contentsline {subsubsection}{\numberline {2.3.7}Error Scenarios}{9}
 \contentsline {section}{\numberline {3}Planning}{9}
 \contentsline {subsection}{\numberline {3.1}Milestones}{9}
@@ -45,11 +45,11 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Backend Development}{9}
 \contentsline {subsection}{\numberline {3.2}Timeline}{9}
 \contentsline {subsubsection}{\numberline {3.2.1}HTML/CSS}{9}
-\contentsline {subsubsection}{\numberline {3.2.2}Javascript}{9}
+\contentsline {subsubsection}{\numberline {3.2.2}Javascript}{10}
 \contentsline {subsubsection}{\numberline {3.2.3}Database}{10}
 \contentsline {subsubsection}{\numberline {3.2.4}Mobile Development}{10}
 \contentsline {subsection}{\numberline {3.3}Project Tracking}{10}
-\contentsline {subsubsection}{\numberline {3.3.1}GitHub}{10}
+\contentsline {subsubsection}{\numberline {3.3.1}GitHub}{11}
 \contentsline {subsubsection}{\numberline {3.3.2}Slack}{11}
 \contentsline {subsubsection}{\numberline {3.3.3}Drive}{11}
 \contentsline {subsection}{\numberline {3.4}Risk Management}{11}
