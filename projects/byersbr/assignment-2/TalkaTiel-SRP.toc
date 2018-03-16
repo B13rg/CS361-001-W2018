@@ -50,14 +50,14 @@
 \contentsline {subsubsection}{\numberline {3.2.4}Mobile Development}{10}
 \contentsline {subsection}{\numberline {3.3}Project Tracking}{10}
 \contentsline {subsubsection}{\numberline {3.3.1}GitHub}{10}
-\contentsline {subsubsection}{\numberline {3.3.2}Slack}{10}
-\contentsline {subsubsection}{\numberline {3.3.3}Drive}{10}
-\contentsline {subsection}{\numberline {3.4}Risk Management}{10}
-\contentsline {subsubsection}{\numberline {3.4.1}Yik Yak}{10}
-\contentsline {subsubsection}{\numberline {3.4.2}Storing User Data}{10}
+\contentsline {subsubsection}{\numberline {3.3.2}Slack}{11}
+\contentsline {subsubsection}{\numberline {3.3.3}Drive}{11}
+\contentsline {subsection}{\numberline {3.4}Risk Management}{11}
+\contentsline {subsubsection}{\numberline {3.4.1}Yik Yak}{11}
+\contentsline {subsubsection}{\numberline {3.4.2}Storing User Data}{11}
 \contentsline {subsubsection}{\numberline {3.4.3}Managing Content}{11}
 \contentsline {section}{\numberline {4}Meeting Report}{11}
 \contentsline {subsection}{\numberline {4.1}Progress Made This Week}{11}
-\contentsline {subsection}{\numberline {4.2}Plans for Next Week}{11}
-\contentsline {subsection}{\numberline {4.3}Team Member Contributions}{11}
-\contentsline {subsection}{\numberline {4.4}Customer Meeting Status}{11}
+\contentsline {subsection}{\numberline {4.2}Plans for Next Week}{12}
+\contentsline {subsection}{\numberline {4.3}Team Member Contributions}{12}
+\contentsline {subsection}{\numberline {4.4}Customer Meeting Status}{12}
