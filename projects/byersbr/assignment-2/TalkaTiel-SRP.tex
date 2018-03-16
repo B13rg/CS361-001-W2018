@@ -38,7 +38,11 @@ The purpose of Talkatiel is to create an anonymous message board app.  Users wil
 	We will be designing this for use primarily on mobile device browsers.  These include Chrome, Safari, and Firefox.  Because of the way PWA’s are structured, they should also perform well on desktop browsers such as Chrome, Edge, and Safari.
 
   Talkatiel will use a service worker to precache parts of a web app, allowing it to load quickly the next time the user uses it.  This allows us to manage what the user sees while cutting down on network traffic and load times.  A service worker can perform its tasks even when the web app isn’t open.  This means in addition to caching and managing web app data, it also has the ability to allow users to access things offline, intercept HTTP/HTTPS requests and even send push notifications to the user.
-  
+\subsection{Platforms and Sharing}
+A portable web app means that the application will be availible from any link online as well as through a link on a users phone.\newline\newline
+\textbf{Our planned platforms are} mobile, web\newline
+\textbf{Our application should be shareable} through a link\newline
+
 \subsection{Functional Requirements}
 \subsubsection{logging}
 It is extremely important that we have the ability to log both what posts are made and who makes them.  Despite being an anonymous message board, users will only be anonymous to each other, not to the server.  This allows us to take action against posters that create content that is bullying or hate speach.  Without some form of logging there is no way to punish users who continually antagonize other users.
