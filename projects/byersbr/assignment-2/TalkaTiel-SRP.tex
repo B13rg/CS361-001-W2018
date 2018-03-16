@@ -24,7 +24,7 @@
 
 \begin{figure}
   \includegraphics[scale=0.75]{similarServices}
-  \caption{This describes the types of communication present on different platforms.  Talktatiel is the only Many-to-Many platform.}
+  \caption{This describes the types of communication present on different platforms. Note that Talktatiel is the only Many-to-Many platform.}
 \end{figure}
 	Talkatiel will be a Portable Web App, or a PWA.  This allows it to behave as an app does while also being much more accessible and easier to use for our end users.  The web app itself will consist primarily of 3 elements:   the service worker, the app shell, and the backend database.  A service worker is a chunk of code that exists outside the website.  It stays on a users device and works to cache and manage data for the web app.  It will also allow us to send push notifications to the user.  The app shell is the skeleton behind the web app.  It is stored on the users device, allowing the web app to load quickly.  It manages the basic user interface which is then filled with content from the server.  The database will store all posts along with identification and metadata information.
 
@@ -83,7 +83,13 @@ In addition to a simple and intuitive user interface, there will also be a limit
       \item Integrate ads into the platform
 \end{itemize}
 
+
 \section{Use Cases}
+
+\begin{figure}
+  \includegraphics[scale=0.75]{use_case_diagram}
+  \caption{This diagram demonstrates the 3 interactions we cover in our use cases, \textit{Creating a new post, Auditing the new post, and Viewing the post page}}
+\end{figure}
 
 \subsection{Creating a new post}
 
@@ -203,18 +209,94 @@ The update request created by the posting of a new post must be processed in les
 
 \section{Planning}
 \subsection{Milestones}
-\subsubsection{User Interaction}
-	Users need to be able to easily read, comment, and make posts in real time. This is a challenge when there are fast updates and constant use. In addition to this, readers also need to be able to upvote and downvote posts, report posts, and save posts. Many of these features will need to be stored on a server, and most importantly, stored anonymously.
-Location
-	A user’s location will be general and only tied to their submitted posts and browsing. This data will only be stored when submitting a post.
-\subsubsection{Backend Development}
-	creating a strong and secure server will be challenging. Hosting a server will have more cons than pros, and renting a server may be safer for users. Getting the server setup will take a lot of time and effort to get it right. This means that a separate team will probably be assigned to 	develop this.
-Server-side Storage
-	Protecting user’s identity is very important. Things that are stored on a server like phone 	numbers and other identifiable information will be cached and stored on a local device. The 	only accounts that will exist are administrators (5 of us). These will be hashed and salted.
-Risks
-	Content such as posts and comments will be sent to the server. These will need to be checked for malicious code. This should happen quickly and reliably in order to have the user see the changes in a reasonable time. This will be tied to a unique user id, hidden on server side, in 	order to manage reports and bans.
-Client-side Storage
-	Users will have a cached version of the web-app, updating when refreshed or live feed. The app will have lightweight storage for the user.
+Each milestone builds on the last, which was how the order was chosen.
+Much of the 10 weeks of the term will be spent documenting and planning the project as follows:
+
+\subsubsection{Software Requirements and Planning (SRP):}
+Implementation Goals:
+\begin{itemize}
+  \item Meet with customer to discuss goals
+  \item Agree with customer on functional and nonfunctional requirements
+  \item Brainstorm 3 initial use cases, showing important product functionalities
+  \item Create rough project timeline and milestones
+\end{itemize}
+
+\subsubsection{Software Design Specification and UI (SDSUI):}
+Begin creating UI prototypes, create class and sequence diagrams to plan
+components of the software from both the developer and customer point of views.
+Requires access to photoshop, a developer to create the prototypes, and the rest
+of the team to create the diagrams. \textit{Depends on early stage plans defined in SRP.}
+
+Implementation Goals:
+\begin{itemize}
+  \item Create prototypes of each “page” of the app using photoshop
+  \item Begin class diagrams
+  \item Begin sequence diagrams
+\end{itemize}
+
+\subsubsection{Design and Implemented System (DIS):}
+Further flesh out the requirements and design of the software. Add further
+detail to the UML class diagrams created in SDSUI. Use class diagram to decide
+how the classes will be packaged (coupled) together, the interfaces needed to
+implement the classes, and begin analyzing possible risks in the system. Begin
+brainstorming exception handling for these risks. Requires whole team to design
+and agree on product design. \textit{Depends on designs created in SDSUI stage.}
+
+Implementation Goals:
+\begin{itemize}
+  \item Complete class diagrams, final internal system design
+  \item Decide what type of server and database will be used for implementation
+  \item Create Risk Analysis paper
+\end{itemize}
+
+\subsubsection{User Stories and Setup Assignment (USSA):}
+Think about how the system will be used. Create ~20 user stories relating to
+these scenarios. Each story should correspond to a piece of implementation. Set
+dates for when the features in these stories need to be implemented in code, and
+for each story create a new sequence-of-events diagram to clarify to the
+developers what classes/parts of the system are used for the story and in what
+order. Requires each teammate to handle about 3 user stories and for whole team
+to agree on their priorities. \textit{Depends on diagrams from DIS, Sequence diagrams
+brainstormed during SDSUI.}
+Implementation Goals:
+\begin{itemize}
+  \item Create list of ~20 user stories
+  \item Decide priority of each story
+  \item Create sequence diagram for each story
+\end{itemize}
+
+\subsubsection{First Implementation of System (FIS): }
+Begin implementing the user stories in code. Choose what is implemented this
+week based on the deadlines and dependencies for each user story outlined in
+USSA. For each user story, create unit tests to ensure the correctness of the
+code. Create Product Release paper to explain to the costumer where the program
+is located and include instructions on how to run it. Review and revise deadline
+estimates based on progress made up to this point. Requires at least one
+computer to run server and database, one other device to connect with server,
+and each developer having own computer to work on their own assigned code.
+\textit{Depends on user stories created in USSA.}
+Implementation Goals:
+\begin{itemize}
+  \item Implement final prototype of UI in HTML/CSS
+  \item Set up a server
+  \item Set up a database
+  \item Implement ~10 user stories using the UI, server, and database created above
+\end{itemize}
+
+\subsubsection{Second Implementation of System (SIS):}
+Complete implementation of user stories. As in FIS, create tests for each user
+story as it is implemented. Final revision of deadline estimates and explain
+which features (if any) could not be implemented within the timeline. Requires
+at least one computer to run server and database, one other device to connect
+with server, and each developer having own computer to work on their own
+assigned code.
+Implementation Goals:
+\begin{itemize}
+  \item Implement all user stories
+  \item Ensure server can identify individual users while keeping them anonymous
+  \item Test program on multiple devices
+  \item Present final product
+\end{itemize}
 
 \subsection{Timeline}
 \subsubsection{HTML/CSS}
